@@ -696,7 +696,7 @@
     <string name="meldungen_nomeldungen_faq2_text">"Applacovid detecta a qué distancia y durante cuánto tiempo se tuvo contacto con otro usuario\n\nLa aplicación te informará sólo si la posibilidad de un contagio es alta"</string>
 
     <!-- Meldungen Detail Weisse Box Texte Unten -->
-    <string name="meldungen_detail_explanation_text3">"En caso de que tengas un prueba positiva de COVID-19 no olvides compartirlo"</string>
+    <string name="meldungen_detail_explanation_text3">"En caso de que hayas dado positivo a COVID-19, no olvides compartirlo"</string>
 
     <!-- Meldungen: Meldung Weisse Box Link Titel -->
     <string name="meldungen_explanation_link_title">"Consulta las medidas..."</string>
