@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/DP3T_SDK.iml" filepath="$PROJECT_DIR$/.idea/modules/DP3T_SDK.iml" group="DP3T_SDK" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sdk/sdk.iml" filepath="$PROJECT_DIR$/.idea/modules/sdk/sdk.iml" group="DP3T SDK/sdk" />
+    </modules>
+  </component>
+</project>

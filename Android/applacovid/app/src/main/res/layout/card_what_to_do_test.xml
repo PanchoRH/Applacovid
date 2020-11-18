@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <androidx.cardview.widget.CardView
+        style="@style/NextStep.Card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/card_what_to_do_test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:foreground="?selectableItemBackground"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/contacts_header"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/NextStep.Text.Title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing_medium"
+                    android:layout_weight="1"
+                    android:text="Prueba COVID-19 positiva" />
+
+                <ImageView
+                    android:id="@+id/contacs_chevron"
+                    android:layout_width="@dimen/chevron_size_title"
+                    android:layout_height="@dimen/chevron_size_title"
+                    android:layout_marginEnd="@dimen/spacing_small"
+                    android:src="@drawable/ic_chevron_right"
+                    android:tint="@color/dark_main" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:background="@color/status_blue_bg"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="15dp">
+
+                    <ImageView
+                        android:id="@+id/check_b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7.7dp"
+                        android:layout_marginLeft="5dp"
+                        android:tint="@color/blue_main"
+                        android:src="@drawable/ic_check" />
+
+                    <TextView
+                        style="@style/NextStep.Text.Title"
+                        android:id="@+id/check_c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/check_b"
+                        android:layout_marginLeft="5dp"
+                        android:letterSpacing=".085"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:layout_marginTop="@dimen/spacing_small"
+                        android:text="REPORTATE"
+                        android:textColor="@color/status_blue" />
+
+                    <TextView
+                        style="@style/NextStep.Text"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/check_c"
+                        android:layout_alignStart="@+id/check_c"
+                        android:layout_marginBottom="15dp"
+                        android:text="Con tu reporte ayudas a todos" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/card_wtd_test_illustration"
+        android:layout_width="@dimen/card_ill_width"
+        android:layout_height="110dp"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentEnd="true"
+
+        android:elevation="@dimen/card_elevation"
+        android:src="@drawable/ill_positiv_getestet" />
+
+</RelativeLayout>
