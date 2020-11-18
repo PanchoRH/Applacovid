@@ -1,0 +1,6 @@
+"CFBundleDisplayName" = "Applacovid";
+"NSBluetoothPeripheralUsageDescription" = "Los encuentros se reconocerán en segundo plano a través de Bluetooth de baja energía";
+"NSBluetoothAlwaysUsageDescription" = "Los encuentros se reconocerán en segundo plano a través de Bluetooth de baja energía";
+"NSPhotoLibraryAddUsageDescription" = "¿Permitir que Applacovid acceda a tus fotos, media y archivos en tu dispositivo?";
+//"NSLocationAlwaysAndWhenInUseUsageDescription" = "¿Permitir que Applacovid acceda a su ubicacion?";
+//"NSLocationWhenInUseUsageDescription" = "¿Permitir que Applacovid acceda a su ubicacion?";

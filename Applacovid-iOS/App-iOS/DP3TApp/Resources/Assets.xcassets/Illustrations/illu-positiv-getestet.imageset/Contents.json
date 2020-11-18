@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "illu-positiv-getestet_2.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "illu-positiv-getestet@2x_2.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "illu-positiv-getestet@3x_2.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

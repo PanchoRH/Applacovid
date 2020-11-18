@@ -1,0 +1,34 @@
+name: build
+
+on:
+  push:
+    branches: '**'
+
+jobs:
+  build_release_prod:
+    runs-on: macOS-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Switch to Xcode 11.4.1
+      run: sudo xcode-select --switch /Applications/Xcode_11.4.app
+    
+    - name: Sign and build
+      env:
+        APP_SCHEME: "Release-Prod"
+      run: fastlane sign_and_build
+
+  build_release_dev:
+    runs-on: macOS-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Switch to Xcode 11.4.1
+      run: sudo xcode-select --switch /Applications/Xcode_11.4.app
+
+    - name: Sign and build
+      env:
+        APP_SCHEME: "Release-Internal"
+      run: fastlane sign_and_build

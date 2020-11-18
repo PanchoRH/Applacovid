@@ -1,0 +1,900 @@
+
+/*App Name*/
+"app_name" = "Applacovid";
+
+/*App Name (unter Icon auf iOS)*/
+"CFBundleDisplayName" = "Applacovid";
+
+/*Loading View: Erneut laden*/
+"loading_view_reload" = "Volver a cargar";
+
+/*Fehler Titel in Loading View*/
+"loading_view_error_title" = "Error";
+
+/*Alert: Titel wenn die App muss geupdatet werden*/
+"force_update_title" = "Se requiere actualización";
+
+/*Informieren: Weiter Button*/
+"inform_continue_button" = "Continuar";
+
+/*Informieren: Senden Button*/
+"inform_send_button_title" = "Enviar";
+
+/*Informieren: Danke*/
+"inform_send_thankyou" = "¡Muchas gracias!";
+
+/*Informieren: Danke Text*/
+"inform_send_thankyou_text" = "Los contactos cercanos que tuviste en los últimos días serán informados de manera inmediata preservando tu anonimato\n\nHas hecho una muy valiosa contribución hacia el control y reducción de cadenas de contagio";
+
+/*Informieren: Button Titel*/
+"inform_fertig_button_title" = "Cerrar";
+
+/*Titel auf Homescreen für Begegnungen*/
+"handshakes_title_homescreen" = "Contactos";
+
+/*Abbrechen*/
+"cancel" = "Cancelar";
+
+/*Titel für Push-Nachrichten, wenn erkannt wird, dass ein Nutzer exposed war*/
+"push_exposed_title" = "Nuevo mensaje";
+
+/*Titel für Push-Nachrichten, wenn erkannt wird, dass ein Nutzer exposed war*/
+"push_exposed_text" = "Abra la aplicación para leer el mensaje";
+
+/*Okay Button Titel*/
+"android_button_ok" = "Ok";
+
+/*Onboarding: Weiter Button Titel*/
+"onboarding_continue_button" = "Continuar";
+
+/*Onboarding: Fertig Button*/
+"onboarding_finish_button" = "Terminado";
+
+/*Unerwarteter Fehler*/
+"unexpected_error_title" = "Ha ocurrido un error inesperado";
+
+/*Bluetooth Fehlermeldung*/
+"bluetooth_turned_off" = "La aplicación no funciona porque Bluetooth está desconectado";
+
+/*Bluetooth Permission Fehler*/
+"bluetooth_permission_turned_off" = "La aplicación no funciona porque no se ha autorizado el uso de Bluetooth";
+
+/*Permission Text für Bluetooth*/
+"NSBluetoothPeripheralUsageDescription" = "Los contactos son detectados en segundo plano por Bluetooth con bajo consumo de energía";
+
+/*Permission Text für Bluetooth*/
+"NSBluetoothAlwaysUsageDescription" = "Los contactos son detectados en segundo plano por Bluetooth con bajo consumo de energía";
+
+/*Inform: Titel der Code abschicken Seite*/
+"inform_code_title" = "Introduce el código Covid";
+
+/*Inform: Code eingeben Subtext*/
+"inform_code_text" = "Introduce el código Covid recibido";
+
+/*Inform: Code eingeben kein Code Button Text*/
+"inform_code_no_code" = "¿Necesita ayuda?";
+
+/*Titel des Bluetooth Control*/
+"tracing_setting_title" = "Rastreo";
+
+/*Text beim Bluetooth Control*/
+/*Fuzzy*/
+"tracing_setting_text_ios" = "Notificaciones de exposición";
+
+/*Bluetooth Control: Tracking deaktiviert*/
+"bluetooth_setting_tracking_inactive" = "Desactivado el rastreo";
+
+/*Titel auf Homescreen*/
+"reports_title_homescreen" = "Notificaciones";
+
+/*Keine Meldungen Titel*/
+"meldungen_no_meldungen_title" = "No hay notificaciones";
+
+/*Push deaktiviert Titel*/
+"push_deactivated_title" = "Mensajes desactivados";
+
+/*Push deaktiviert Text*/
+"push_deactivated_text" = "Modifique los ajustes para ser informado directamente al recibir un aviso";
+
+/*Titel im Meldung Detail*/
+"meldungen_meldung_title" = "Posible contagio";
+
+/*Text im Meldung Detail*/
+"meldungen_meldung_text" = "Applacovid detectó que uno de tus contactos se reportó como contagiado";
+
+/*Titel ob Tracing aktiv*/
+"tracing_active_title" = "Aplicación activa";
+
+/*Text bei Tracing aktiv*/
+"tracing_active_text" = "Tus contactos serán guardados de manera anónima";
+
+/*Android: Fehler Text bei Tracing*/
+"android_tracing_error_title" = "Rastreo no activado";
+
+/*Fehlertitel mit Foreground Service Notification*/
+"android_foreground_service_notification_errors" = "La aplicación no puede funcionar correctamente en este momento:";
+
+/*Titel der Nachricht, die auf Beta-Status hinweist*/
+"preview_warning_title" = "Versión previa";
+
+/*Text der Nachricht, die auf Beta-Status hinweist*/
+"preview_warning_text" = "Esta aplicación ofrece una visión previa de la implementación de DP-3T. No se trata de un rastreador de COVID-19 activo";
+
+/*Debug: Label auf dem Button, der zum Debug-Screen führt*/
+"debug_settings_title" = "Ajustes de depuración";
+
+/*Debug: Titel für die Debug-Einstellungen zur Status-Überschreibung*/
+"debug_state_setting_title" = "Sobrescribir el estado de la aplicación";
+
+/*Debug: Erklärungstext für die Debug-Einstellungen zur Status-Überschreibung*/
+"debug_state_setting_text" = "Esta configuración sobrescribe el estado visual de la aplicación. La funcionalidad de rastreo no se ve afectada";
+
+/*Debug: Einstellungs-Option zum überschreiben des App-Zustands: Keine*/
+"debug_state_setting_option_none" = "No rescribir";
+
+/*Debug: Einstellungs-Option zum überschreiben des App-Zustands: Gesund*/
+"debug_state_setting_option_ok" = "Sano";
+
+/*Debug: Einstellungs-Option zum überschreiben des App-Zustands: Einem positiven Kontakt ausgesetzt*/
+"debug_state_setting_option_exposed" = "Contacto testado positivo";
+
+/*Debug: Einstellungs-Option zum überschreiben des App-Zustands: Selbst positiv getestet*/
+"debug_state_setting_option_infected" = "Autoseñalado positivo";
+
+/*Debug: Titel für die Debug-Info zum Tracing-Status*/
+"debug_sdk_state_title" = "Estado SDK";
+
+/*Debug: Erklärungstext für die Debug-Info zum Tracing-Status*/
+"debug_sdk_state_text" = "Estado actual del SDK de DP-3T";
+
+/*Debug: Bezeichnung für den letzen sync-Zeitpunkt*/
+"debug_sdk_state_last_synced" = "Última sincronización:";
+
+/*Debug: Bezeichnung für den Fall, bei dem der User selber als positiv getestet gemeldet wurde*/
+"debug_sdk_state_self_exposed" = "Autoseñalado:";
+
+/*Debug: Bezeichnung für den Fall, bei dem ein Kontakt als positiv getestet gemeldet wurde*/
+"debug_sdk_state_contact_exposed" = "Contacto notificado:";
+
+/*Debug-Status-Bezeichnung für boleschen Wert 'true'*/
+"debug_sdk_state_boolean_true" = "sí";
+
+/*Debug-Status-Bezeichnung für boleschen Wert 'false'*/
+"debug_sdk_state_boolean_false" = "no";
+
+/*Debug: Button-Text für das Zurücksetzen des lokalen SDK Zustandes*/
+"debug_sdk_button_reset" = "Reiniciar el SDK";
+
+/*Tab-Titel*/
+"tab_tracing_title" = "Rastreo";
+
+/*Titel auf Homescreen für Was tun Section*/
+"whattodo_title_symptoms" = "Síntomas de la enfermedad";
+
+/*Subtitel auf Homescreen für Was Tun Section*/
+"whattodo_subtitle_symptoms" = "¿Qué hacer si…";
+
+/*Titel auf Homescreen bei Was tun Section*/
+"whattodo_title_positivetest" = "el resultado del test es positivo";
+
+/*Subtitel auf Homescreen bei Was tun Section*/
+"whattodo_subtitle_positivetest" = "¿Qué hacer si…";
+
+/*Informieren Detail: Subtitel*/
+"inform_detail_subtitle" = "¿Qué hacer en caso de…";
+
+/*Informieren Detail: Titel*/
+"inform_detail_title" = "que la prueba COVID-19 es positiva?";
+
+/*Inform Detail: Weisse Box Subtitel*/
+"inform_detail_box_subtitle" = "Con el código Covid…";
+
+/*Inform Detai Weisse Box Titel*/
+"inform_detail_box_title" = "Detener las cadenas de contagio";
+
+/*Inform Detail Weisse Box Button*/
+"inform_detail_box_button" = "Introducir el código Covid";
+
+/*Informieren Detail Weisse Box Text*/
+"inform_detail_box_text" = "Al introducir el código COVID estás informando de manera anónima a Applacovid que has dado positivo a la prueba COVID-19";
+
+/*Symptome Detail Subtitel*/
+"symptom_detail_subtitle" = "¿Qué hago si…";
+
+/*Symptom Detail Titel*/
+"symptom_detail_title" = "me siento enfermo?";
+
+/*Symptom Detail Weisse Box Subtitel*/
+"symptom_detail_box_subtitle" = "En caso de síntomas de COVID-19…";
+
+/*Symptom Detail Weisse Box Titel*/
+"symptom_detail_box_title" = "Hacer el test";
+
+/*Symptom Detail Weisse Box Button*/
+"symptom_detail_box_button" = "Más información";
+
+/*Symptom Detail Weisse Box Text*/
+"symptom_detail_box_text" = "La OFSP recomienda a todas las personas con síntomas de COVID-19 que se hagan el test. Llame a un médico o a un centro sanitario";
+
+/*Informieren Titel in NavigationBar/Toolbar*/
+"inform_detail_navigation_title" = "Prueba COVID-19 positiva";
+
+/*Symptome Detail: NavigationBar/Toolbar Titel*/
+"symptom_detail_navigation_title" = "Síntomas";
+"tracing_turned_off_title" = "Rastreo desactivado";
+"tracing_turned_off_text" = "Activa el rastreo para que la aplicación funcione";
+"bluetooth_turned_off_title" = "Bluetooth desactivado";
+"bluetooth_turned_off_text" = "Para que el rastreo funcione, activa Bluetooth en su dispositivo";
+"bluetooth_turn_on_button_title" = "Activar Bluetooth";
+"bluetooth_permission_error_title" = "Rechazada la utilización de Bluetooth";
+"bluetooth_permission_error_text" = "Autoriza la utilización de Bluetooth para permitir el rastreo";
+
+/*URL zum Corona Check*/
+"symptom_detail_corona_check_url" = "https://pakal.cs.cinvestav.mx/";
+"push_open_settings_button" = "Cambiar ajustes";
+
+/*Meldungen Detail: Subtitel wenn keine Meldungen*/
+"meldungen_no_meldungen_subtitle" = "No has tenido contactos de riesgo";
+
+/*Keine Meldungen Weisse Box Titel*/
+"no_meldungen_box_title" = "Cuídate";
+
+/*Keine Meldungen Weisse Box Subtitel*/
+"no_meldungen_box_subtitle" = "¿Qué debo hacer?";
+
+/*Keine Meldungen Weisse Box Text*/
+"no_meldungen_box_text" = "Observa las recomendaciones vigentes";
+
+/*Meldung Detail: Positiv Getestet Titel*/
+"meldung_detail_positive_tested_title" = "Prueba positiva";
+
+/*Meldung Detail: Positiv Getestet Subtitel*/
+"meldung_detail_positive_tested_subtitle" = "Has dado positivo a la prueba COVID-19";
+
+/*Meldung Detail Positiv Getestet Weisse Box Subtitel*/
+"meldung_detail_positive_test_box_subtitle" = "¿Qué debo hacer?";
+
+/*Meldung Detail Positiv Getestet Weisse Box Titel*/
+"meldung_detail_positive_test_box_title" = "Aislamiento";
+
+/*Meldung Detail Positiv Getestet Weisse Box Text*/
+"meldung_detail_positive_test_box_text" = "Observa las medidas necesarias para  realizar un autoaislamiento temporal";
+"meldungen_explanation_link_title" = "Consulta las medidas...";
+"meldungen_explanation_link_url" = "https://pakal.cs.cinvestav.mx/";
+"tracing_ended_title" = "Rastreo terminado";
+"tracing_ended_text" = "No se guardan más contactos";
+"exposed_info_contact_hotline" = "Toma precauciones";
+"meldung_homescreen_positive_info_line1" = "Sigue las ";
+"meldung_homescreen_positive_info_line2" = "instrucciones para el autoaislamiento";
+
+/*Meldung Detail Exposed Neue Meldung*/
+"meldung_detail_exposed_new_meldung" = "Nueva notificación";
+
+/*Meldung Detail Exposed Titel*/
+"meldung_detail_exposed_title" = "Posible contagio";
+"meldung_homescreen_positiv_title" = "Prueba positiva";
+
+/*Meldung Detail Exposed Subtitel*/
+"meldung_detail_exposed_subtitle" = "Existe la posibilidad de un contagio";
+"meldung_homescreen_positiv_text" = "Has dado positivo a la prueba COVID-19";
+
+/*Debug Screen: Onboarding Reset Button*/
+"reset_onboarding" = "Reiniciar onboarding";
+
+/*Heute*/
+"date_today" = "Hoy";
+
+/*Meldung Detail: Vor wievielen Tagen {COUNT} wird durch Zahl ersetzt*/
+"date_days_ago" = "hace {COUNT} días";
+
+/*Meldungen Detail: Weisse Box Titel*/
+"meldungen_detail_call" = "Evita contacto con otras personas";
+
+/*Meldungen Detail Text Weisse Box*/
+"meldungen_detail_call_text" = "Puedes obtener más información en nuestro sitio";
+
+/*Meldungen Detail Weisse Box Button*/
+"meldungen_detail_call_button" = "Visita ahora";
+
+/*Meldungen Detail Weisse Box Titel der Erklärungen*/
+"meldungen_detail_explanation_title" = "Toma todas las precauciones";
+
+/*Meldungen Detail Weisse Box Erklärungstext 1*/
+"meldungen_detail_explanation_text1" = "Puedes ser asintomático y ser contagioso";
+
+/*Meldungen Detail: Weisse Box Erklärtext 2*/
+"meldungen_detail_explanation_text2" = "Protege a la gente a tu alrededor evitando todo contacto hasta que transcurran 15 días desde el posible contagio";
+
+/*Meldungen Detail: Weisse Box Text*/
+"meldungen_detail_guard_text" = "En caso de preguntas:\nInfoline Applacovid\n+41 58 387 77 78";
+
+/*Meldungen Detail Button Weisse Box*/
+"meldungen_detail_call_again_button" = "Vuelva a llamar";
+
+/*Meldungen Detail: Weisse Box Anruf Zeitpunkt*/
+"meldungen_detail_call_last_call" = "última llamada: {DATE}";
+
+/*Subtitel im Onboarding erste Seite*/
+"app_subtitle" = "(Subtitle)";
+
+/*Onboarding: Titel oben*/
+"onboarding_prinzip_heading" = "El objetivo";
+
+/*Onboarding: Titel*/
+"onboarding_prinzip_title" = "Anticiparnos al virus";
+
+/*Onboarding Prinzip Text*/
+"onboarding_prinzip_text1" = "Con Applacovid todos podemos contribuir a contener la propagación del virus";
+
+/*Onboarding Prinzip Text*/
+"onboarding_prinzip_text2" = "Applacovid te avisa si has tenido un contacto de riesgo con COVID-19";
+
+/*Onboarding Privacy: Titel oben*/
+"onboarding_privacy_heading" = "Protegiendo tu privacidad";
+
+/*Onboarding Privacy: Titel*/
+"onboarding_privacy_title" = "Tu privacidad está a salvo";
+
+/*Onboarding Privacy: Text*/
+"onboarding_privacy_text1" = "Tu teléfono manda periódicamente mensajes aleatorios que otros recolectan";
+
+/*Onboarding Privacy: Text*/
+"onboarding_privacy_text2" = "A su vez, tu teléfono recoge y almacena por 15 días todos los mensajes que detecta";
+
+/*Onboarding Privacy: Text*/
+"onboarding_privacy_text3" = "Es imposible para Applacovid relacionar tu identidad con los mensajes aleatorios";
+
+/*Onboarding Begegnungen: Titel oben*/
+"onboarding_begegnungen_heading" = "¿Cómo funciona Applacovid?";
+
+/*Onboarding Begegnungen: Titel*/
+"onboarding_begegnungen_title" = "Rastreo de contactos por Bluetooth";
+
+/*Onboarding Begegnungen: Text*/
+"onboarding_begegnungen_text1" = "Applacovid detecta automáticamente si has estado cerca y por un tiempo considerable con otra persona";
+
+/*Onboarding Begegnungen: Text*/
+"onboarding_begegnungen_text2" = "Utiliza Bluetooth con bajo consumo de energía y ningún otro dato es recolectado por Applacovid";
+
+/*Onboarding Meldung: Text oben*/
+"onboarding_meldung_heading" = "¿Qué hace Applacovid?";
+
+/*Onboarding Meldung: Titel*/
+"onboarding_meldung_title" = "Notificación de un contacto riesgoso";
+
+/*Onboarding Meldung: Text*/
+"onboarding_meldung_text1" = "Applacovid te avisa si has estado en contacto cercano con una persona contagiada de COVID-19";
+
+/*Onboarding Meldung: Text*/
+"onboarding_meldung_text2" = "Adoptando la conducta adecuada puede usted romper las cadenas de contagio y proteger a los demás";
+
+/*Onboarding Bluetooth: Titel*/
+"onboarding_bluetooth_title" = "Activar Bluetooth";
+
+/*Onboarding Bluetooth: Text*/
+"onboarding_bluetooth_text" = "Para poder utilizar Applacovid debes autorizar el uso de Bluetooth";
+
+/*Onboarding Bluetooth: Button*/
+"onboarding_bluetooth_button" = "Autorizar";
+
+/*Onboarding: Untetitel unten*/
+"onboarding_good_to_know" = "Bueno saber...";
+
+/*Onboarding Bluetooth: Titel unten*/
+"onboarding_bluetooth_gtk_title1" = "Tu anonimato está garantizado";
+
+/*Onboarding Bluetooth: Text unten*/
+"onboarding_bluetooth_gtk_text1" = "Bluetooth no divulga datos personales";
+
+/*Onboarding Bluetooth: Titel unten*/
+"onboarding_bluetooth_gtk_title2" = "Applacovid consume poca energía";
+
+/*Onboarding Bluetooth: Text unten*/
+"onboarding_bluetooth_gtk_text2" = "El consumo de batería es ligeramente mayor";
+
+/*Onboarding Mitteilungen: Titel*/
+"onboarding_push_title" = "Permitir mensajes";
+
+/*Onboarding Mitteilungen: Text*/
+"onboarding_push_text" = "Es necesario que actives tus mensajes para que Applacovid pueda informarte oportunamente";
+
+/*Onboarding Mitteilungen: Button*/
+"onboarding_push_button" = "Activar mensajes";
+
+/*Onboarding Mitteilungen: Titel Unten*/
+"onboarding_push_gtk_title1" = "Información importante";
+
+/*Onboarding Mitteilungen: Text unten*/
+"onboarding_push_gtk_text1" = "En caso de que hayas estado en contacto cercano con un usuario contagiado, se te informará de inmediato con una notificación";
+
+/*Code senden: Abschluss Gute Besserung*/
+"inform_send_getwell_title" = "¡Te deseamos pronta mejoría!";
+
+/*Code senden: Abschluss Gute Besserung*/
+"inform_send_getwell_text" = "¡Te deseamos pronta mejoría! \n\nSigue las instrucciones de aislamiento recibidas";
+
+/*Titel auf dem letzen Onboarding Screen*/
+"onboarding_go_title" = "La aplicación está instalada";
+
+/*Text auf dem letzten Onboarding Screen*/
+"onboarding_go_text" = "Gracias por ayudar a romper las cadenas de contagio";
+
+/*Button-Label auf dem letzten Onboarding screen*/
+"onboarding_go_button" = "Comenzar";
+
+/*Homescreen: Titel bei Fehler mit Daten*/
+"homescreen_meldung_data_outdated_title" = "No hay datos actuales";
+
+/*Homescreen: Text bei Fehler mit Daten*/
+"homescreen_meldung_data_outdated_text" = "No ha sido posible sincronizar las notificaciones durante algún tiempo. Asegúrese de que su dispositivo está conectado con internet";
+
+/*Homescreen: Button Titel*/
+"homescreen_meldung_data_outdated_retry_button" = "Volver a intentar";
+
+/*Titel Fehlermeldung für ungültigen Code*/
+"inform_code_invalid_title" = "Código no válido";
+
+/*Fehlermeldung Subtitle ungültiger Code*/
+"inform_code_invalid_subtitle" = "Se tiver problemas: contacte a entidade da qual recebeu o código COVID";
+
+/*Datum: Vor 1 Tag*/
+"date_one_day_ago" = "hace 1 día";
+
+/*Meldungen Detail: Titel*/
+"meldung_detail_new_contact_title" = "Posible infección";
+
+/*Meldungen Detail: Text*/
+"meldung_detail_new_contact_subtitle" = "Puede haber ocurrido una infección";
+
+/*Fehler mit Uhrzeit Titel*/
+"time_inconsistency_title" = "Error en la hora";
+
+/*Fehler mit Uhrzeit Text*/
+"time_inconsistency_text" = "La hora tiene que ser la correcta para que el rastreo funcione";
+
+/*Begegnungen: Neustart Titel*/
+"begegnungen_restart_error_title" = "Reinicio necesario";
+
+/*Begegnungen: Neustart Text*/
+"begegnungen_restart_error_text" = "Ha ocurrido un error inesperado. Reinicie el dispositivo";
+
+/*Fehler Titel für Hintergrund-Fehler*/
+"meldungen_background_error_title" = "Actualización de fondo desactivada";
+
+/*Text für Hintergrund Fehler*/
+"meldungen_background_error_text" = "Cambie los ajustes para recibir las notificaciones más actuales también fuera de la aplicación";
+
+/*Button Titel für Hintergrundfehler beheben*/
+"meldungen_background_error_button" = "Cambiar ajustes";
+
+/*Default message for force update*/
+"force_update_text" = "Instale la nueva versión de la aplicación para que funcione el rastreo";
+
+/*Ignorieren Button Titel*/
+"meldung_in_app_alert_ignore_button" = "Ignorar";
+
+/*Button Titel*/
+"meldung_in_app_alert_accept_button" = "Ir a las informaciones";
+
+/*Meldungen Detail: Button Titel*/
+"meldungen_detail_call_again" = "Vuelva a llamar";
+
+/*Fehlernachricht für Netzwerkfehler*/
+"network_error" = "Verifique la conexión a internet";
+
+/*Unerwarteter Fehler, mit Aufforderung Aktion erneut zu versuchen*/
+"unexpected_error_with_retry" = "Ha ocurrido un error inesperado. Vuelva a intentarlo";
+
+/*VoiceOver: Datum*/
+"accessibility_date" = "Fecha";
+
+/*Voiceover Codeeingabe: Nummerierte Textfelder*/
+"accessibility_1nd" = "Primero";
+
+/*Voiceover Codeeingabe: Nummerierte Textfelder*/
+"accessibility_2nd" = "Segundo";
+
+/*Voiceover Codeeingabe: Nummerierte Textfelder*/
+"accessibility_3nd" = "Tercero";
+
+/*Voiceover Codeeingabe: Nummerierte Textfelder*/
+"accessibility_4nd" = "Cuarto";
+
+/*Voiceover Codeeingabe: Nummerierte Textfelder*/
+"accessibility_5nd" = "Quinto";
+
+/*Voiceover Codeeingabe: Nummerierte Textfelder*/
+"accessibility_6nd" = "Sexto";
+
+/*Voiceover Codeeingabe: Nummerierte Textfelder*/
+"accessibility_7nd" = "Séptimo";
+
+/*Voiceover Codeeingabe: Nummerierte Textfelder*/
+"accessibility_8nd" = "Octavo";
+
+/*Voiceover Codeeingabe: Nummerierte Textfelder*/
+"accessibility_9nd" = "Noveno";
+
+/*Voiceover Codeeingabe: Nummerierte Textfelder*/
+"accessibility_10nd" = "Décimo";
+
+/*Voiceover Codeeingabe: Nummerierte Textfelder*/
+"accessibility_11nd" = "Undécimo";
+
+/*Voiceover Codeeingabe: Nummerierte Textfelder*/
+"accessibility_12nd" = "Duodécimo";
+
+/*Voiceover: Hilfetext bei Codeeingabe*/
+"accessibility_code_button_disabled_hint" = "No es posible presionar, código incompleto";
+
+/*Fehler: Standortinformationen / Bluetooth*/
+"android_foreground_service_notification_error_location_service" = "Active las informaciones sobre la geolocalización para que la aplicación pueda usar Bluetooth. La aplicación no conoce su posición en ningún momento";
+
+/*Location Services ausgeschaltet Titel*/
+"android_error_location_services_title" = "Geolocalización desactivada";
+
+/*Location Services ausgeschaltet Button*/
+"android_error_location_services_button" = "Activar la geolocalización";
+
+/*Information Button in the navigation bar*/
+"accessibility_info_button" = "Información";
+
+/*Synchronisations-Fehler Titel*/
+"sync_warning_notification_title" = "Sincroniza la aplicación";
+
+/*Synchronisations-Fehler Text*/
+"sync_warning_notification_text" = "Abre la aplicación para saber si tuviste contacto riesgoso";
+
+/*Meldungen Detail: Button bei Vollansicht*/
+"meldung_animation_continue_button" = "Continuar";
+
+/*Titel Impressum Menu*/
+"menu_impressum" = "Pie de imprenta";
+
+/*Begegnungen: FAQ Titel*/
+"begegnung_detail_faq1_title" = "¿Cuándo se registra un contacto?";
+
+/*Begegnungen: FAQ Text*/
+"begegnung_detail_faq1_text" = "El dispositivo registra un contacto anónimamente, cuando dos celulares con la aplicación instalada y activa se encuentran a una distancia cercana uno del otro durante un período de tiempo prolongado";
+
+/*Begegnungen: FAQ Titel*/
+"begegnung_detail_faq2_title" = "¿Mis datos están seguros?";
+
+/*Begegnungen: FAQ Text*/
+"begegnung_detail_faq2_text" = "Cuando se registra un contacto, ambos celulares intercambian credenciales anónimas que han sido generadas aleatoriamente. Las credenciales anónimas que recibas de tus contactos cercanos permanecerán guardadas en tu dispositivo y serán eliminadas después de 15 días";
+
+/*Begegnungen: FAQ Titel*/
+"begegnungen_detail_faq3_title" = "¿Debo mantener activo a  Bluetooth en todo momento?";
+
+/*Begegnungen: FAQ Text*/
+"begegnungen_detail_faq3_text" = "Sí\nPara poder efectuar el rastreo de tus contactos cercanos, debes mantener activo a Bluetooth en todo momento. A cambio de un consumo extra de energía, te mantienes seguro tanto a ti como a tu comunidad";
+
+/*FAQ Button Titel*/
+"faq_button_title" = "Preguntas frecuentes";
+
+/*Meldungen Keine Meldungen FAQ Titel*/
+"meldungen_nomeldungen_faq1_title" = "¿Qué son las notificaciones?";
+
+/*Meldungen: Keine Meldungen FAQ Text*/
+"meldungen_nomeldungen_faq1_text" = "La aplicación controla regularmente si alguno de los usuarios con los que te has encontrado ha notificado como positivo a COVID-19 \n\nEn caso de un posible contacto, serás informado con una notificación";
+
+/*Meldungen: Keine Meldungen FAQ Titel*/
+"meldungen_nomeldungen_faq2_titel" = "¿Qué es un posible contagio?";
+
+/*Meldungen: Keine Meldungen FAQ Text*/
+"meldungen_nomeldungen_faq2_text" = "Applacovid detecta a qué distancia y durante cuánto tiempo se tuvo contacto con otro usuario \n\nLa aplicación te informará solo si la posibilidad de un contagio es alta";
+
+/*Meldungen Detail Weisse Box Texte Unten*/
+"meldungen_detail_explanation_text3" = "En caso de que tengas un prueba positiva de COVID-19 no olvides compartirlo";
+
+/*Meldungen: Meldungen FAQ*/
+"meldungen_meldungen_faq1_title" = "¿Debo llamar por teléfono?";
+
+/*Meldungen: Meldungen FAQ Text*/
+"meldungen_meldungen_faq1_text" = "Se recomienda llamar por teléfono después de cada notificación \n\nSu anonimato está garantizado. No se registran datos personales\n\nLa consulta es gratuita; solo se incurre en los gastos telefónicos";
+
+/*Meldungen Detail: Anruf Titel*/
+"meldungen_detail_call_thankyou_title" = "Gracias por su colaboración";
+
+/*Meldungen Detail Anruf Danke Subtitel*/
+"meldungen_detail_call_thankyou_subtitle" = "Está usted protegiendo a otras personas";
+
+/*Keine Meldungen Link in weisser Box Titel*/
+"no_meldungen_box_link" = "Así nos protegemos";
+
+/*Keine Meldungen Weisse Box Link URL*/
+"no_meldungen_box_url" = "https://pakal.cs.cinvestav.mx/";
+
+/*Informieren Detail: FAQ Titel*/
+"inform_detail_faq1_title" = "¿Qué es el código COVID?";
+
+/*Inform Detail: FAQ Text*/
+"inform_detail_faq1_text" = "Aquellas personas que han dado positivo en la prueba de COVID-19 suministrada por una autoridad de salud competente, recibirán un código COVID. De esta manera Applacovid garantiza que sólo rastreará contactos de casos confirmados";
+
+/*Inform Detail: FAQ Titel*/
+"inform_detail_faq2_title" = "¿Qué datos se envían?";
+
+/*Inform Detail FAQ Text*/
+"inform_detail_faq2_text" = "Únicamente se envían identificadores anónimos generados por Applacovid y en ningún momento datos personales\n\nEsta información permite que la comunidad de usuarios de Applacovid pueda rastrear contactos recientes con personas contagiadas";
+
+/*Telefonnummer der Infoline*/
+"infoline_tel_number" = "Puedes obtener más información en nuestro sitio";
+
+/*URL für Häufige Fragen Button*/
+"faq_button_url" = "https://pakal.cs.cinvestav.mx/";
+
+/*Informieren Flow: Titel erster Screen*/
+"inform_code_intro_title" = "Aviso importante";
+
+/*Informieren-Flow: Erster Screen Text*/
+"inform_code_intro_text" = "A pesar de que no se envían datos sobre tu persona, es posible que alguien recuerde por la fecha haber tenido contacto contigo";
+
+/*Inform-Flow: Erster Screen Button*/
+"inform_code_intro_button" = "Entendido";
+
+/*Symptome: FAQ Titel*/
+"symptom_faq1_title" = "¿Cuáles son los síntomas de COVID-19?";
+
+/*Symptome: FAQ Text*/
+"symptom_faq1_text" = "Los síntomas siguientes aparecen con frecuencia:\n\n- fiebre, sensación febril\n- dolor de garganta\n- tos (casi siempre seca)\n- dificultad respiratoria\n- dolores musculares\n- pérdida repentina del sentido del gusto y/o del olfato";
+
+/*Meldungen: Positiv getestet FAQ Titel*/
+"meldungen_positive_tested_faq1_title" = "¿Por qué ha finalizado el rastreo?";
+
+/*Meldungen: Positiv getestet FAQ Text*/
+"meldungen_positive_tested_faq1_text" = "El rastreo termina de manera automática después de que te reportaste como persona contagiada de COVID-19";
+
+/*Sprache Abkürzung (BITTE NICHT ÄNDERN)*/
+"language_key" = "es";
+
+/*Meldungen Homescreen: Name Hotline*/
+"exposed_info_contact_hotline_name" = "Applacovid";
+
+/*Meldung Detail: "Noch 1 Tag" Label*/
+"date_in_one_day" = "1 día más";
+
+/*Meldung Detail: Anzeige "Noch x Tage" {COUNT} wird durch Zahl ersetzt*/
+"date_in_days" = "{COUNT} días más";
+
+/*Datum: Text vor Datum: am 26.2.2020 / {DATE} wird ersetzt durch Datum*/
+"date_text_before_date" = "el {DATE}";
+
+/*Accessibility Talk back information for android back button in toolbar*/
+"android_accessibility_back_button" = "Volver a intentar";
+
+/*VoiceOver: Hilfetext bei Codeeingabe Button*/
+"accessibility_code_button_current_code_hint" = "Código introducido";
+
+/*Accessibility: Codeeingabe einer Ziffer*/
+"accessibility_code_input_textfield" = "Cuadro de texto. Cifra actual:";
+
+/*Accessibility: Code Input Textfeld wenn leer*/
+"accessibility_code_input_textfield_empty" = "Cuadro de texto. Vacío";
+
+/*Accessibility: Hint zum doppelklicken wenn einzelnes Codefeld angeklickt*/
+"accessibility_code_input_hint" = "Pulsar dos veces para editar";
+
+/*Accessibility: FAW Button Titel */
+"accessibility_faq_button_hint" = "Este button abandona la aplicación y abre la página web de la O.F.S.P.";
+
+/*Titel auf der Onboarding Page für die Permission der Exposure-Library*/
+"onboarding_gaen_title" = "Activar el rastreo";
+
+/*Text auf der Onboarding Page für die Permission der Exposure-Library, iOS*/
+/*Fuzzy*/
+"onboarding_gaen_text_ios" = "Para poder utilizar la aplicación debe activarse Notificaciones de exposición a la COVID-19";
+
+/*Aktivieren-Button auf der Onboarding Page für die Permission der Exposure-Library*/
+"onboarding_gaen_button_activate" = "Activar";
+
+/*Onboarding Page für die Permission der Exposure-Library: Info Titel 1*/
+"onboarding_gaen_info_title_1" = "Protección de datos";
+
+/*Onboarding Page für die Permission der Exposure-Library: Info Text 1*/
+"onboarding_gaen_info_text_1" = "Solamente se intercambian ID aleatorias. No se intercambian datos sobre su persona o su localización";
+
+/*Onboarding Page für die Permission der Exposure-Library: Info Titel 2*/
+"onboarding_gaen_info_title_2" = "Ligero incremento del consumo de batería";
+
+/*Onboarding Page für die Permission der Exposure-Library: Info Text 2*/
+"onboarding_gaen_info_text_2" = "La aplicación opera con el mínimo de energía posible. El consumo de batería es solo ligeramente mayor";
+
+/*Aktivieren-Button auf der Onboarding Page für die Permission der Exposure-Library*/
+"onboarding_gaen_button_activated" = "Activado";
+
+/*Meldung in der App löschen, wenn möglicherweise angesteckt*/
+"delete_reports_button" = "Eliminar notificación";
+
+/*Meldung im Löschen Dialog wenn möglicherweise angesteckt*/
+"delete_reports_dialog" = "¿De verdad quiere eliminar esta notificación?";
+
+/*Code-Eingabe in der App löschen, wenn infiziert*/
+"delete_infection_button" = "Eliminar notificación";
+
+/*Meldung im Löschen Dialog nach Code-Einfragen*/
+"delete_infection_dialog" = "¿De verdad quiere eliminar esta notificación?";
+"android_onboarding_battery_permission_title" = "Ignorar optimización de la batería";
+"android_onboarding_battery_permission_text" = "Para poder detectar los contactos en todo momento, la optimización de la batería debe estar desconectada para esta aplicación";
+"android_onboarding_battery_permission_button" = "Autorizar";
+"android_onboarding_battery_permission_button_deactivated" = "OK";
+"android_onboarding_battery_permission_info_1_title" = "Solo para esta aplicación";
+"android_onboarding_battery_permission_info_1_text" = "Para que la aplicación funcione, debe ejecutarse también en segundo plano. Para ello, la optimización de la batería puede desconectarse para aplicaciones individuales";
+"android_onboarding_battery_permission_info_2_title" = "Ligero incremento del consumo de batería";
+"android_onboarding_battery_permission_info_2_text" = "La aplicación opera con el máximo ahorro energético. El consumo de batería es solo ligeramente mayor";
+"android_foreground_service_notification_error_battery_optimization" = "Para un rastreo preciso, la aplicación debe ejecutarse también en segundo plano. Esto aumenta ligeramente el consumo de batería";
+
+/*Google Play Services nicht aktuell*/
+"gaen_not_aviable" = "Google Play Services no actualizado";
+
+/*Google Play Services nicht aktuell text*/
+"gaen_not_available_text" = "Actualice Google Play Services";
+
+/*Tracing wurde vom System deaktiviert, erneut starten*/
+"gaen_unexpectedly_disabled" = "Se ha desactivado el rastreo. Vuelva a iniciarlo";
+
+/*Fehler-Titel, wenn Tracing deaktiviert wurde im System, iOS*/
+/*Fuzzy*/
+"tracing_permission_error_title_ios" = "Notificaciones de exposición a la COVID-19 desactivado desactivado";
+
+/*Fehler-Text, wenn Tracing deaktiviert wurde im System, iOS*/
+/*Fuzzy*/
+"tracing_permission_error_text_ios" = "Active la función Notificaciones de exposición a la COVID-19, para que el rastreo pueda funcionar";
+
+/*Error-Meldung, wenn der Benutzer während des Informieren-Flows bei GApple das Key-Sharing nicht erlaubt.*/
+"user_cancelled_key_sharing_error" = "No se ha podido enviar el mensaje. Autorice el intercambio de su ID aleatoria con la app Applacovid";
+
+/*Button um die Google Play Services zu aktualisieren*/
+"playservices_update" = "Actualizar";
+
+/*Button um die Google Play Services zu installieren*/
+"playservices_install" = "Instalar";
+
+/*Titel für Infos zu den Google Play Services*/
+"playservices_title" = "Google Play Services";
+
+/*Meldung, dass die Google Play Services benötigt werden*/
+"playservices_text" = "Para activar el rastreo se necesita una versión actualizada de Google Play Services\n\nSi la actualización no estuviera disponible en su dispositivo actualmente, inténtelo más tarde";
+"android_error_battery_optimization_title" = "Optimización del consumo de batería actualizada";
+"android_error_battery_optimization_button" = "Permitir";
+
+/*Telefonnummer für Hilfe bei App-Problemen*/
+"app_hotline_tel_number" = "+41 58 466 07 99";
+
+/*text shown in notification when we get an exception from the GAEN api*/
+"sync_api_error" = "Se ha producido un error inesperado al sincronizar las notificaciones";
+
+/*Fehler, der bei ungültigen Zertifikat angezeigt wird. Kann z.B. passieren, wenn man in einem public wlan ist*/
+"certificate_validation_error" = "No es posible establecer una conexión segura con el servidor. Compruebe la conexión, desactive su VPN o el Proxy o verifique si está conectado a través de un Public WLAN";
+
+/*Fehler-Titel wenn die Exposure Notifications nicht gestartet werden konnten.*/
+"android_en_start_failure" = "No es posible activar las notificaciones COVID-19 ";
+
+/*Certificate pinning Debug screen section title*/
+"certificate_pinning_title" = "Certificate Pinning";
+"certificate_pinning_button_disable" = "Disable";
+"certificate_pinning_button_enable" = "Enable";
+
+/*Erster Onboarding-Screen für Pilot: Überschrift*/
+"onboarding_legal_heading" = "Preview version";
+
+/*Erster Onboarding-Screen für Pilot: Titel*/
+"onboarding_legal_title" = "Use only for participants of the pilot phase";
+
+/*Erster Onboarding-Screen für Pilot: Erster Abschnitt*/
+"onboarding_legal_text1" = "The use of this app is currently intended and authorised only for the following groups, who have been invited by the FOPH to take part in the pilot: Members of the Swiss Armed Forces in training, assistance and active service, staff of universities, staff of hospitals and clinics, staff of cantonal administrations and the Federal Administration, members of associations wishing to contribute to improving the quality of the system";
+
+/*Erster Onboarding-Screen für Pilot: Zweiter Abschnitt*/
+"onboarding_legal_text2" = "The pilot phase is carried out with productive systems and contains real data. In case of a positive COVID-19 test, cantonal physicians are not allowed to generate a covid code for notification from the app for non-authorized users. Attacks (\"penetration tests\") on the system outside the delimited public security test are attacks on the productive system and are therefore illegal";
+
+/*Erster Onboarding-Screen für Pilot: Titel von Popup in dem Nutzer Pilot bestätigen muss*/
+"onboarding_legal_alert_title" = "Do you belong to an organization that is allowed to participate in the pilot phase?";
+
+/*Erster Onboarding-Screen für Pilot: Text von Popup in dem Nutzer Pilot bestätigen muss*/
+"onboarding_legal_alert_message" = "Do you belong to one of the following groups: Members of the Swiss Armed Forces in training, assistance and active service, employees of universities, employees of hospitals and clinics, employees of cantonal administrations and the Federal Administration, members of associations who wish to contribute to the quality improvement of the system?\n";
+
+/*Erster Onboarding-Screen für Pilot: NEIN von Popup in dem Nutzer Pilot bestätigen muss*/
+"onboarding_legal_alert_no" = "No";
+
+/*Erster Onboarding-Screen für Pilot: JA von Popup in dem Nutzer Pilot bestätigen muss*/
+"onboarding_legal_alert_yes" = "Yes";
+
+/*Erster Onboarding-Screen für Pilot: Blockierendes Popup für Nutzer die nicht im Pilot sind, Titel*/
+"onboarding_legal_blocker_title" = "Pilot phase";
+
+/*Erster Onboarding-Screen für Pilot: Blockierendes Popup für Nutzer die nicht im Pilot sind, Text*/
+"onboarding_legal_blocker_message" = "You are not part of an organization participating in the pilot phase. Please install the appropriate update after the official launch of the app and open the app again";
+"begegnung_detail_last_sync_title" = "Última sincronización exitosa";
+"synchronizations_view_title" = "Resumen";
+"synchronizations_view_info_title" = "Sincronizaciones";
+"synchronizations_view_info_question" = "¿Qué son las sincronizaciones?";
+"synchronizations_view_info_answer" = "La aplicación comprueba regularmente los identificadores (ID) aleatorios publicados por usuarios que han dado positivo";
+"synchronizations_view_period_title" = "En los últimos 14 días";
+"synchronizations_view_sync_via_open" = "  • Open";
+"synchronizations_view_sync_via_background" = "  • Sync";
+"synchronizations_view_empty_list" = "No hay registros";
+"synchronizations_view_sync_via_scheduled" = "  • Scheduled";
+"synchronizations_view_sync_via_fake_request" = "  • Fake Report";
+"synchronizations_view_sync_via_next_day_key_upload" = "  • Pending Upload";
+
+/*Kleinerer Titel im Dialog mit dem Code, der vor dem Anrufen angezeigt wird, wenn ein Kontakt positiv ist.*/
+"pre_call_dialog_before_title" = "Antes de la conversación";
+
+/*Titel im Dialog mit dem Code, der vor dem Anrufen angezeigt wird, wenn ein Kontakt positiv ist.*/
+"pre_call_dialog_main_title" = "Tome nota de las indicaciones siguientes";
+
+/*Datums-Label im Dialog mit dem Code, der vor dem Anrufen angezeigt wird, wenn ein Kontakt positiv ist.*/
+"pre_call_dialog_box_datum" = "Fecha";
+
+/*Code-Label Titel im Dialog mit dem Code, der vor dem Anrufen angezeigt wird, wenn ein Kontakt positiv ist.*/
+"pre_call_dialog_box_number" = "Número";
+"tracing_active_tracking_always_info" = "Applacovid permanece activa aún cuando se cierra la aplicación";
+
+/*title in splash screen of onboarding*/
+"oboarding_splashscreen_title" = "Applacovid \npara las \ncadenas de contagio";
+"inform_detail_faq3_text" = "A pesar de que no se envían datos sobre su persona, es posible que alguien recuerde por la fecha haber tenido contacto contigo";
+"inform_detail_faq3_title" = "¿Permanezco en el anonimato?";
+
+/*Meldung Detail Weiss Box unten*/
+"meldungen_detail_explanation_text4" = "En cuanto aparezcan los primeros síntomas, haga la autoevaluación del coronavirus o llame a su médico";
+
+/*Text beim Bluetooth Control*/
+"tracing_setting_text_android" = "Notificaciones de exposición a la COVID-19";
+
+/*Text auf der Onboarding Page für die Permission der Exposure-Library, Android*/
+"onboarding_gaen_text_android" = "Para poder utilizar la aplicación debe activarse Notificaciones de exposición a la COVID-19";
+
+/*Onboarding Disclaimer Screen: AppName Title*/
+"onboarding_disclaimer_heading" = "Applacovid";
+
+/*Onboarding Disclaimer Screen: Title*/
+"onboarding_disclaimer_title" = "Notas sobre la utilización";
+
+/*Onboarding Disclaimer Screen: Info*/
+"onboarding_disclaimer_info" = "Aquí encontrará la política de privacidad y las condiciones de uso";
+
+/*Onboarding Disclaimer Screen: Warning Title*/
+"onboarding_disclaimer_warning_title" = "Advertencia: Esta aplicación no le protege de una infección con COVID-19";
+
+/*Onboarding Disclaimer Screen: Warning Text*/
+"onboarding_disclaimer_warning_body" = "La aplicación está pensada para el rastreo de proximidad y para advertir a los usuarios de un posible riesgo de exposición a una persona contagiada con el COVID-19. No se trata de un instrumento de diagnóstico. Lea cuidadosamente las instrucciones dadas en todas las pantallas";
+
+/*Onboarding Disclaimer Screen: Manufacturer Info*/
+"onboarding_disclaimer_manufacturer" = "Bundesamt für Gesundheit BAG\nSchwarzenburgstrasse 157\n3097 Liebefeld, Schweiz";
+
+/*Onboarding Disclaimer Screen: App version title*/
+"onboarding_disclaimer_app_version" = "Applacovid App Version";
+
+/*Onboarding Disclaimer Screen: Release version title*/
+"onboarding_disclaimer_release_version" = "Release Date:";
+
+/*onboarding privacy and conditions of use button*/
+"onboarding_disclaimer_legal_button" = "Política de privacidad & Condiciones de uso";
+
+/*onboarding privacy and conditions of use url*/
+"onboarding_disclaimer_legal_button_url" = "https://pakal.cs.cinvestav.mx/";
+
+/*Google Translation*/
+/*Error shown when loading fails because there is not enough free disk space.*/
+"loading_error_no_disk_space" = "Los mensajes no pudieron ser revisados porque el teléfono móvil no tiene suficiente espacio de memoria libre. Por favor, libere el espacio de memoria";
+
+/*Onboarding: Akzeptieren Buttton Titel*/
+"onboarding_accept_button" = "Acepta";
+
+/*Google Translation*/
+/*Meldungen: Fehler Meldung Rate-Limit (error 13) Titel*/
+"ratelimit_error_title" = "La actualización no es posible por el momento";
+
+/*Google Translation!*/
+/*Meldungen: Fehler Meldung Rate-Limit (error 13) Text*/
+"ratelimit_error_text" = "Ya ha habido demasiadas preguntas hoy. La aplicación lo intentará de nuevo más tarde";
+
+/*Info to the user that tracing has been switched on*/
+"accessibility_tracing_has_been_activated" = "Se ha activado el rastreo";
+
+/*Info to the user that tracing has been switched off*/
+"accessibility_tracing_has_been_deactivated" = "Se ha desactivado el rastreo";
+
+
+
+
+
