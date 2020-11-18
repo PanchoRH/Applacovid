@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+    <head th:replace="fragments/header :: head"/>
+    <body>
+        <div th:replace="fragments/mainnav :: navbar"/>
+
+        <div class="container-fluid" style="margin-top:90px;">
+            <script th:src="@{/webjars/jquery/3.3.1/jquery.min.js}"></script>
+            <script th:src="@{/webjars/popper.js/1.14.7/dist/umd/popper.min.js}"></script>
+            <script th:src="@{/webjars/bootstrap/4.3.1/js/bootstrap.min.js}"></script>
+            <script th:src="@{/js/general.js}"></script>
+
+            <div layout:fragment="content">
+                <p>Page content goes here</p>
+            </div>
+        </div>
+
+        <div th:insert="~{fragments/footer :: footer}">&copy; 2020 The Static Templates</div>
+
+        <script type="text/javascript">
+            var alertMessage = $('#alert-message');
+        </script>
+    </body>
+</html>

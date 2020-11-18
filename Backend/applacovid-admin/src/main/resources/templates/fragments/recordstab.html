@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<body>
+    <div id="records-tab" class="container tab-pane active" th:fragment="recordsTabFragment">
+        <div class="row py-4">
+            <div th:replace="fragments/messages :: messagesFragment('Registros')"></div>
+        </div>
+        <div class="row border-bottom border-top py-3">
+            <div class="col-sm-2">
+                <p>Id Prueba</p>
+            </div>
+            <div class="col-sm-4">
+                <p>Nombre de Usuario</p>
+            </div>
+            <div class="col-sm-2">
+                <p>Fecha de Registro</p>
+            </div>
+            <div class="col-sm-2">
+            </div>
+            <div class="col-sm-2">
+            </div>
+        </div>
+        <div th:replace="fragments/records :: recordsFragment"></div>
+        <script th:inline="javascript">
+            var urlAddExpose = /*[[@{/console/addExpose}]]*/ '/console/addExpose';
+            var addExposeForm = $('#addExposeForm');
+            var recordContentId = $('#records-content');
+            var urlRefreshRecords = /*[[@{/console/refreshrecords}]]*/ '/console/refreshrecords';
+            var urlDeleteRecord = /*[[@{/console/deleterecord}]]*/ '/console/deleterecord';
+        </script>
+    </div>
+    <!--<script type="text/javascript">
+        Spring.addDecoration(
+            new Spring.AjaxEventDecoration({formId:'addExposeForm', elementId:'sendPositive', event:'onclick'}));
+    </script>-->
+</body>
+</html>

@@ -1,0 +1,331 @@
+html
+{
+    font-size: 1em;
+    position: relative;
+}
+
+body
+{
+    font-family: 'Open Sans', Arial, sans-serif !important;
+    font-size: 12px;
+    margin: 50px auto;
+    height: 100%;
+    min-height: 100%;
+}
+/****************************
+Copyright / Footer
+****************************/
+.footer
+{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    background-color: #666666;
+    color: #FFFFFF;
+    z-index: 100;
+}
+
+.copyright
+{
+    padding-top: 10px;
+    font-size: 0.7em;
+}
+
+/****************************
+ Inputs and Buttons
+****************************/
+.form-control
+{
+    font-size: 12px;
+}
+
+.row.form-group:not(.description-form-group)
+{
+    align-items: center;
+}
+
+.row.form-group:not(.description-form-group) label
+{
+    margin-top: 7px;
+}
+
+.btn
+{
+    min-width: 70px;
+}
+
+.btn-sm
+{
+    font-size: inherit;
+}
+
+.btn-primary
+{
+    background-color: #8E669D;
+    border-color: #8E669D;
+}
+
+.btn-primary:hover,
+.btn-primary:focus
+{
+    background-color: #CA6EC6;
+    border-color: #CA6EC6;
+}
+
+.disabled,
+button:disabled
+{
+    cursor: not-allowed !important;
+}
+
+a.btn.disabled
+{
+    background: #666;
+    border-color: #666;
+}
+
+/****************************
+Navigation bar
+****************************/
+.navbar,
+.navbar .navbar-toggle:hover,
+.navbar .navbar-toggle:focus,
+.navbar .navbar-nav .dropdown-menu.show,
+.navbar .navbar-nav .nav-item.active .nav-link,
+.navbar .navbar-nav .nav-item.active .nav-link:hover,
+.navbar .navbar-nav .nav-item.active .nav-link:focus,
+.navbar .navbar-nav .nav-item.show .nav-link,
+.navbar .navbar-nav .nav-item.show .nav-link:hover,
+.navbar .navbar-nav .nav-item.show .nav-link:focus
+{
+    background-color: #8E669D;
+}
+
+.navbar .navbar-text,
+.navbar .navbar-brand,
+.navbar .navbar-nav .nav-link,
+.navbar .navbar-toggle .navbar-toggler-icon
+{
+    color: #ecf0f1;
+    margin-bottom: 0px;
+    margin-right: 0px;
+}
+
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus,
+.navbar .navbar-text a,
+.navbar .navbar-text a:hover,
+.navbar .navbar-text a:focus,
+.navbar .navbar-link:hover
+
+{
+    color: #c3c3c3;
+}
+
+.navbar .navbar-nav .nav-link
+{
+    border-radius: .25rem;
+    margin: 0 0.25em;
+}
+
+.navbar .navbar-nav .nav-item.show .nav-link,
+.navbar .navbar-nav .nav-item.show .nav-link:hover,
+.navbar .navbar-nav .nav-item.show .nav-link:focus,
+.navbar .navbar-nav .nav-link:not(.disabled):hover,
+.navbar .navbar-nav .nav-link:not(.disabled):focus
+
+{
+    color: #ffffff;
+}
+
+.navbar .navbar-nav .nav-item.active .nav-link,
+.navbar .navbar-nav .nav-item.active .nav-link:hover,
+.navbar .navbar-nav .nav-item.active .nav-link:focus
+{
+    color: #cecece;
+}
+
+.navbar .navbar-nav .nav-item.active .nav-link:hover,
+.navbar .navbar-nav .nav-item.show .nav-link:hover,
+.navbar .navbar-nav .nav-link:not(.disabled):hover,
+.navbar .navbar-nav .dropdown-menu.show .dropdown-item:hover
+{
+    color: #e6d9df;
+}
+
+.navbar .navbar-nav .dropdown-menu.show .dropdown-item:hover
+{
+    background: rgba(0, 0, 0, 0.03);
+}
+
+.navbar .navbar-nav .dropdown-menu.show .dropdown-item
+{
+    color: #ffffff;
+}
+
+.navbar .navbar-toggle
+{
+    border-color: #8E669D;
+}
+
+.navbar .navbar-collapse,
+.navbar .navbar-form
+{
+    border-color: #ecf0f1;
+}
+
+.navbar .navbar-link
+{
+    color: #ecf0f1;
+}
+
+@media(min-width: 768px)
+{
+    .dropdown-menu-leftside
+    {
+        transform: translateX(-80%);
+    }
+
+    .navbar .navbar-nav .dropdown-menu.show
+    {
+        margin-top: 12px;
+        border: none;
+        border-top: 3px solid #000000;
+        border-radius: 0;
+    }
+}
+
+@media(max-width: 787px)
+{
+    .navbar .dropdown-menu.show
+    {
+        border: none;
+    }
+
+    .navbar .navbar-nav .nav-item.active .nav-link:hover,
+    .navbar .navbar-nav .nav-item.show .nav-link:hover,
+    .navbar .navbar-nav .nav-link:not(.disabled):hover,
+    .navbar .navbar-nav .dropdown-menu.show .dropdown-item:hover
+    {
+        background: rgba(0, 0, 0, 0.03);
+        color: #A5D3A1;
+    }
+}
+
+/****************************
+Security pages (login, register, etc.)
+****************************/
+.appsecurity
+{
+    max-width: 400px;
+    min-width: 300px;
+    margin: 30px auto;
+    border-radius: 4px;
+    box-shadow: 3px 3px 10px #ddd;
+    background-color: #8E669D;
+}
+
+.appsecurity .panel-body
+{
+    text-align: center;
+    padding: 30px 25px 25px 25px;
+    background-color: #8E669D;
+}
+
+.appsecurity img
+{
+    height: 80%;
+    max-width: 100%;
+    margin-bottom: 30px;
+    background-color: #8E669D;
+}
+
+.appsecurity h2
+{
+    margin: 0 0 30px;
+    color: #CA6EC6;
+}
+
+.appsecurity input
+{
+    text-align: center;
+}
+
+.login-banner
+{
+    background:
+            url('../images/onboarding-bluetooth-3x.png')
+            left
+            no-repeat;
+    background-size: 60%;
+}
+
+.nav-tabs .nav-link
+{
+    color: #666666;
+}
+
+.nav-tabs .nav-link.active
+{
+    color: #8E669D;
+}
+
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-link:focus
+{
+    color: #CA6EC6;
+}
+
+.appcovid-tab-content p
+{
+    margin-bottom: 0px !important;
+    font-size: 16px !important;
+    color: #666666 !important;
+}
+
+.appcovid-btn-positive
+{
+    background-color: #73A18C;
+    border-color: #73A18C;
+}
+
+.appcovid-btn-positive:hover,
+.appcovid-btn-positive:focus
+{
+    background-color: #3A6E56;
+    border-color: #3A6E56;
+}
+
+.tab-content .svg-icon
+{
+    cursor: pointer;
+}
+
+.tab-content .svg-icon
+{
+    fill: #717171;;
+}
+
+.tab-content .svg-icon:hover
+{
+    fill: #000000;
+}
+
+.hide
+{
+    display: none;
+}
+
+.show
+{
+    display: block;
+}
+
+.appcovid-tab-content .code-covid
+{
+    color: black !important;
+    font-size: 22px !important;
+    letter-spacing: 3px;
+}

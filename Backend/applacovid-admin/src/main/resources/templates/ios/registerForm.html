@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layouts/outer}">
+<body>
+<main layout:fragment="content">
+<div style="position: fixed; width: 100%; height: 50px; top: 0; background-color: #8E669D; color: #FFFFFF; right: 0; ">
+			<a th:href="#{navbar.brand.href}" target="_blank"><img height=30
+				th:src="@{#{navbar.brand.logo}}" /></a>
+			<h5 class="navbar-text" style="font-size: 16px;">   Registro de Dispositivos</h5>
+		</div>
+    <div class="row">
+        <div class="col-md-1 col-lg-1"></div>
+        <div class="col-sm-12 col-md-10 col-lg-10">
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#new-device-tab">Formulario de Registro</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-1 col-lg-1"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-1 col-lg-1"></div>
+        <div class="col-sm-12 col-md-10 col-lg-10">
+            <div class="tab-content appcovid-tab-content border-right border-bottom border-left rounded-bottom">
+                <div id="new-device-tab" class="container tab-pane active">
+                    <div class="row py-4">
+                        <div th:replace="fragments/messages :: messagesFragment('Datos del Dispositivo')"></div>
+                    </div>
+                    <form th:action="@{/ios/add}" method="post">
+                        <fieldset class="form-field-set">
+                        <div class="row my-4">
+                                <div class="col-3 d-flex flex-wrap align-content-center justify-content-end">
+                                    <p>Usuario: </p>
+                                </div>
+                                <th:block >
+                                    <div class="col-9">
+                                        <input class="form-control input-sm"
+                                               type="text" name="user" id="user"
+                                               />
+                                    </div>
+                                </th:block>
+                                </div>
+                            <div class="row my-4">
+                                <div class="col-3 d-flex flex-wrap align-content-center justify-content-end">
+                                    <p>UDID: </p>
+                                </div>
+                                <th:block >
+                                    <div class="col-9">
+                                        <input class="form-control input-sm"
+                                               type="text" name="udid" id="udid"
+                                               />
+                                    </div>
+                                </th:block>
+                                </div>
+                                <div class="row my-4">
+                                <div class="col-3 d-flex flex-wrap align-content-center justify-content-end">
+                                    <p>Correo: </p>
+                                </div>
+                                <th:block >
+                                    <div class="col-9">
+                                        <input class="form-control input-sm"
+                                               type="email" name="mail" id="mail"
+                                               />
+                                    </div>
+                                </th:block>
+                                </div>
+                                </fieldset>
+                                <div class="row py-4 d-flex flex-wrap align-content-center justify-content-end">
+                            <div class="col-3">
+                            </div>
+                            <div class="col-9">
+                                <input class="btn btn-primary btn-sm"
+                                       name="submit"
+                                       type="submit"
+                                       th:value="Enviar"/>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-1 col-lg-1"></div>
+    </div>
+    <footer class="footer">
+			<nav class="navbar fixed-bottom justify-content-center">
+				<small class="copyright">Copyright © 2020 Computer
+					Department. Cinvestav CDMX. All rights reserved.</small>
+			</nav>
+		</footer>
+</main>
+</body>
+</html>

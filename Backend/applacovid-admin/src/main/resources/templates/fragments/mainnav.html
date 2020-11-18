@@ -1,0 +1,43 @@
+<nav xmlns:th="http://www.thymeleaf.org"
+     class="navbar navbar-expand-md navbar-dark fixed-top"
+     style="margin-left: 5px; margin-right: 5px; border-bottom: 1px solid rgba(0,0,0,0.3);"
+     th:fragment="navbar">
+
+    <div class="navbar-brand">
+        <a th:href="#{navbar.brand.href}" target="_blank"><img height=30 th:src="@{#{navbar.brand.logo}}"/></a>
+        <h5 class="navbar-text" style="font-size: 16px;" th:text="#{welcome.h1.text}">Admin Console</h5>
+    </div>
+
+    <th:block th:if="${#authorization.expression('isAuthenticated()')}">
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse" id="navbar-content">
+            <ul class="navbar-nav mr-auto"></ul>
+            <ul class="navbar-nav">
+                <th:block th:if="${module == 'applacovid'}">
+                    <li>
+                        <a class="nav-link" th:href="@{/console/}" th:text="#{menu.search.records}">Buscar</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" th:href="@{/console/newrecord}" th:text="#{menu.new.record}">Nuevo</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" th:href="@{/console/newsForm}" th:text="#{menu.new.news}">Nuevo</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" th:href="@{/console/questionsForm}" th:text="#{menu.new.question}">Nuevo</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" th:href="@{/console/newCovidCode}" th:text="#{menu.new.covid.code}">Nuevo</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="/logout" th:href="@{#}" onclick="$('#logoutForm').submit();" th:text="#{header.a.logout}">Logout</a>
+                        <form style="visibility: hidden" id="logoutForm" method="post" action="#" th:action="@{/security/logout}"></form>
+                    </li>
+                </th:block>
+            </ul>
+        </div>
+    </th:block>
+</nav>

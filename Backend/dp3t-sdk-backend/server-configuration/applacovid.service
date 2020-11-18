@@ -1,0 +1,14 @@
+[Unit]
+Description=Applacovid Web Application
+After=syslog.target
+
+[Service]
+WorkingDirectory=/home/computo/applacovid
+SyslogIdentifier=applacovid
+User=computo
+Group=computo
+ExecStart=/usr/bin/java -Xms512m -Xmx3G -Dspring.index.ignore=true -jar /home/computo/applacovid/dpppt-backend-sdk-ws.jar --spring.profiles.active=prod --debug=true
+SuccessExitStatus=143
+
+[Install]
+WantedBy=multi-user.target

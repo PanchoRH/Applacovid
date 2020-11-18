@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<body>
+    <div id="questions-tab" class="container tab-pane fade" th:fragment="questionsTabFragment">
+        <div class="row py-4">
+            <div th:replace="fragments/messages :: messagesFragment('Preguntas')"></div>
+        </div>
+        <div class="row border-bottom border-top py-3">
+            <div class="col-sm-4">
+                <p>Pregunta</p>
+            </div>
+            <div class="col-sm-3">
+                <p>Respuesta</p>
+            </div>
+            <div class="col-sm-3">
+                <p>Fecha de creacion</p>
+            </div>
+        </div>
+        <div th:replace="fragments/records :: questionsFragment"></div>
+        <script th:inline="javascript">
+            var questionsContent = $('#questions-content');
+            var urlRefreshQuestions =  /*[[@{/console/refreshquestions}]]*/ '/console/refreshquestions';
+        </script>
+    </div>
+</body>
+</html>

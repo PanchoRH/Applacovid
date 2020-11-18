@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<body>
+    <div id="records-content" th:fragment="recordsFragment">
+        <th:block th:if="${#lists.isEmpty(allRecords)}">
+            <div class="row border-bottom py-5">
+                <div class="col-sm-12 d-flex flex-wrap align-content-center justify-content-center">
+                    <p th:text="#{records.empty.message}"></p>
+                </div>
+            </div>
+        </th:block>
+        <th:block th:unless="${#lists.isEmpty(allRecords)}">
+            <th:block th:each="record : ${allRecords}">
+                <div class="row border-bottom py-2">
+                    <div class="col-sm-2 d-flex flex-wrap align-content-center">
+                        <span th:text="${record.idTest}"></span>
+                    </div>
+                    <div class="col-sm-4 d-flex flex-wrap align-content-center">
+                        <span th:text="${record.userName}"></span>
+                    </div>
+                    <div class="col-sm-2 d-flex flex-wrap align-content-center">
+                        <span th:text="${{record.lastUpdate}}"></span>
+                    </div>
+                    <div class="col-sm-2 d-flex flex-wrap align-content-center justify-content-center">
+                        <!--data-toggle="tooltip" data-placement="bottom" th:title="#{records.search.delete}"-->
+                        <a href="#" th:attr="recordId=${record.id}" th:onclick="javascript:deleteRecord([[${record.id}]]);">
+                            <div class="svg-icon">
+                                <svg viewBox="0 0 20 20" width="20px" height="20px">
+                                    <path d="M17.114,3.923h-4.589V2.427c0-0.252-0.207-0.459-0.46-0.459H7.935c-0.252,0-0.459,0.207-0.459,0.459v1.496h-4.59c-0.252,0-0.459,0.205-0.459,0.459c0,0.252,0.207,0.459,0.459,0.459h1.51v12.732c0,0.252,0.207,0.459,0.459,0.459h10.29c0.254,0,0.459-0.207,0.459-0.459V4.841h1.511c0.252,0,0.459-0.207,0.459-0.459C17.573,4.127,17.366,3.923,17.114,3.923M8.394,2.886h3.214v0.918H8.394V2.886z M14.686,17.114H5.314V4.841h9.372V17.114z M12.525,7.306v7.344c0,0.252-0.207,0.459-0.46,0.459s-0.458-0.207-0.458-0.459V7.306c0-0.254,0.205-0.459,0.458-0.459S12.525,7.051,12.525,7.306M8.394,7.306v7.344c0,0.252-0.207,0.459-0.459,0.459s-0.459-0.207-0.459-0.459V7.306c0-0.254,0.207-0.459,0.459-0.459S8.394,7.051,8.394,7.306"></path>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-2 d-flex flex-wrap align-content-center justify-content-center">
+                        <form id="addExposeForm" th:if="${exposeeRequest != null}" action="javascript:addExpose()" th:object="${exposeeRequest}" method="post">
+                            <input type="hidden" th:value="${record.kd}" th:attr="name='key'"/>
+                            <input type="hidden" th:value="${record.dateKey}" th:attr="name='keyDate'"/>
+                            <input class="btn btn-primary btn-sm appcovid-btn-positive"
+                                   id = "sendPositive"
+                                   name="submit"
+                                   type="submit"
+                                   th:value="#{records.send.positive}"/>
+                        </form>
+                    </div>
+                </div>
+            </th:block>
+        </th:block>
+    </div>
+
+    <div id="historic-content" th:fragment="historicFragment">
+        <th:block th:if="${#lists.isEmpty(allExposedRecords)}">
+            <div class="row border-bottom py-5">
+                <div class="col-sm-12 d-flex flex-wrap align-content-center justify-content-center">
+                    <p th:text="#{historic.empty.message}"></p>
+                </div>
+            </div>
+        </th:block>
+        <th:block th:unless="${#lists.isEmpty(allExposedRecords)}">
+            <th:block th:each="record : ${allExposedRecords}">
+                <div class="row border-bottom py-2">
+                    <div class="col-sm-2 d-flex flex-wrap align-content-center">
+                        <span th:text="${record.idTest}"></span>
+                    </div>
+                    <div class="col-sm-4 d-flex flex-wrap align-content-center">
+                        <span th:text="${record.userName}"></span>
+                    </div>
+                    <div class="col-sm-3 d-flex flex-wrap align-content-center">
+                        <span th:text="${{record.registerDate}}"></span>
+                    </div>
+                    <div class="col-sm-3 d-flex flex-wrap align-content-center">
+                        <span th:text="${{record.lastUpdate}}"></span>
+                    </div>
+                </div>
+            </th:block>
+        </th:block>
+    </div>
+    <div id="news-content" th:fragment="newsFragment">
+        <th:block th:if="${#lists.isEmpty(allNews)}">
+            <div class="row border-bottom py-5">
+                <div class="col-sm-12 d-flex flex-wrap align-content-center justify-content-center">
+                    <p th:text="#{historic.empty.message}"></p>
+                </div>
+            </div>
+        </th:block>
+        <th:block th:unless="${#lists.isEmpty(allNews)}">
+            <th:block th:each="record : ${allNews}">
+                <div class="row border-bottom py-2">
+                    <div class="col-sm-4 d-flex flex-wrap align-content-center">
+                        <span th:text="${record.title}"></span>
+                    </div>
+                    <div class="col-sm-3 d-flex flex-wrap align-content-center">
+                        <span th:text="${{record.detalle}}"></span>
+                    </div>
+                    <div class="col-sm-3 d-flex flex-wrap align-content-center">
+                        <span th:text="${{record.created}}"></span>
+                    </div>
+                </div>
+            </th:block>
+        </th:block>
+    </div>
+    <div id="questions-content" th:fragment="questionsFragment">
+        <th:block th:if="${#lists.isEmpty(allQuestions)}">
+            <div class="row border-bottom py-5">
+                <div class="col-sm-12 d-flex flex-wrap align-content-center justify-content-center">
+                    <p th:text="#{historic.empty.message}"></p>
+                </div>
+            </div>
+        </th:block>
+        <th:block th:unless="${#lists.isEmpty(allQuestions)}">
+            <th:block th:each="record : ${allQuestions}">
+                <div class="row border-bottom py-2">
+                    <div class="col-sm-4 d-flex flex-wrap align-content-center">
+                        <span th:text="${record.question}"></span>
+                    </div>
+                    <div class="col-sm-3 d-flex flex-wrap align-content-center">
+                        <span th:text="${{record.answer}}"></span>
+                    </div>
+                    <div class="col-sm-3 d-flex flex-wrap align-content-center">
+                        <span th:text="${{record.created}}"></span>
+                    </div>
+                </div>
+            </th:block>
+        </th:block>
+    </div>
+</body>
+</html>

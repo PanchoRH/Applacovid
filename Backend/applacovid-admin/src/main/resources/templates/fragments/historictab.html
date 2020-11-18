@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<body>
+    <div id="historic-tab" class="container tab-pane fade" th:fragment="historicTabFragment">
+        <div class="row py-4">
+            <div th:replace="fragments/messages :: messagesFragment('Historial')"></div>
+        </div>
+        <div class="row border-bottom border-top py-3">
+            <div class="col-sm-2">
+                <p>Id Prueba</p>
+            </div>
+            <div class="col-sm-4">
+                <p>Nombre de Usuario</p>
+            </div>
+            <div class="col-sm-3">
+                <p>Fecha de Registro</p>
+            </div>
+            <div class="col-sm-3">
+                <p>Fecha de Exposición</p>
+            </div>
+        </div>
+        <div th:replace="fragments/records :: historicFragment"></div>
+        <script th:inline="javascript">
+            var historicContent = $('#historic-content');
+            var urlRefreshHistoric = /*[[@{/console/refreshhistoric}]]*/ '/console/refreshhistoric';
+        </script>
+    </div>
+</body>
+</html>

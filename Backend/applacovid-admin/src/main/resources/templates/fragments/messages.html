@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<body>
+    <th:block th:fragment="messagesFragment(title)">
+        <div class="col-sm-5 col-md-5 d-flex flex-wrap align-content-center">
+            <h3 th:text="${title}">Title Page</h3>
+        </div>
+        <div class="col-sm-5 col-md-5 d-flex flex-wrap align-content-center justify-content-center" id="alert-message">
+            <div class="alert alert-success hide"></div>
+            <div class="alert alert-danger hide"></div>
+        </div>
+        <div class="col-sm-2 col-md-2 d-flex flex-wrap align-content-center justify-content-end">
+        </div>
+    </th:block>
+</body>
+</html>

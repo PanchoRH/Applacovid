@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layouts/parent}">
+<body>
+    <main layout:fragment="content">
+        <div class="row">
+            <div class="col-md-1 col-lg-1"></div>
+            <div class="col-sm-12 col-md-10 col-lg-10">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" th:attr="name='records'" data-toggle="tab" href="#records-tab">Registros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" th:attr="name='historic'" data-toggle="tab" href="#historic-tab">Historial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" th:attr="name='news'" data-toggle="tab" href="#news-tab">Noticias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" th:attr="name='questions'" data-toggle="tab" href="#questions-tab">Preguntas</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-1 col-lg-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-1 col-lg-1"></div>
+            <div class="col-sm-12 col-md-10 col-lg-10">
+                <div class="tab-content appcovid-tab-content border-right border-bottom border-left rounded-bottom">
+                    <div th:replace="fragments/recordstab :: recordsTabFragment"/>
+                    <div th:replace="fragments/historictab :: historicTabFragment"/>
+                    <div th:replace="fragments/newstab :: newsTabFragment"/>
+                    <div th:replace="fragments/questionstab :: questionsTabFragment"/>
+                </div>
+            </div>
+            <div class="col-md-1 col-lg-1"></div>
+        </div>
+    </main>
+</body>
+</html>

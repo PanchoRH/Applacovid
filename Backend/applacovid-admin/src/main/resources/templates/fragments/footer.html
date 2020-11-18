@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<body>
+<footer th:fragment="footer" class="footer">
+    <nav class="navbar fixed-bottom justify-content-center">
+        <small class="copyright"
+               th:text="#{footer.copyright1} + ' © ' +
+					    ${#calendars.year(#calendars.createNow())} + ' ' +
+					     #{footer.copyright2}">
+            &copy; 2020 Cinvestav. All Rights Reserved.
+        </small>
+    </nav>
+</footer>
+</body>
+</html>

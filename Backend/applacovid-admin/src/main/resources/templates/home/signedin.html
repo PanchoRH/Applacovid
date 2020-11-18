@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layouts/login}" th:with="logoOnly=true">
+    <body>
+    <div layout:fragment="content">
+        <main class="container-fluid login-banner">
+            <div class="row">
+                <div class="col-md-5 col-lg-5" style="color: white; margin-top:100px; text-align: center;">
+                </div>
+                <div class="col-sm-12 col-md-7 col-lg-7">
+                    <div class="panel panel-default appsecurity">
+                        <div class="panel-body" style="background:white;">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-12 col-lg-12">
+                                    <img th:src="@{/images/applacovid-word-sm.png}"/>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 col-md-12 col-lg-12">
+                                    <form name="check" th:action="@{/security/signin}" method="POST" onsubmit="return validateForm()">
+                                        <div class="form-group">
+                                            <input class="form-control input-sm"
+                                                   id="username"
+                                                   type="text"
+                                                   name="username"
+                                                   th:placeholder="#{login.input.user}"
+                                                   value=""/>
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="form-control input-sm"
+                                                   id="password"
+                                                   type="password"
+                                                   th:placeholder="#{login.input.password}"
+                                                   name="password"/>
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="btn btn-primary btn-sm"
+                                                   name="submit"
+                                                   type="submit"
+                                                   th:value="#{login.input.login}"/>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

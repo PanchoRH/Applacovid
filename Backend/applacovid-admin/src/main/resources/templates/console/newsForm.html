@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layouts/parent}">
+<head>
+<script th:src="@{/tinymce/tinymce.min.js}"></script>
+    <script>
+      
+      tinymce.init({
+          selector: '#detalle',
+          plugins: "textcolor, table lists code",
+          toolbar: " undo redo | bold italic | alignleft aligncenter alignright alignjustify \n\
+                    | bullist numlist outdent indent | forecolor backcolor table code"
+      });
+      
+    </script>
+</head>
+<body>
+<main layout:fragment="content">
+    <div class="row">
+        <div class="col-md-1 col-lg-1"></div>
+        <div class="col-sm-12 col-md-10 col-lg-10">
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#new-record-tab">Registra una noticia</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-1 col-lg-1"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-1 col-lg-1"></div>
+        <div class="col-sm-12 col-md-10 col-lg-10">
+            <div class="tab-content appcovid-tab-content border-right border-bottom border-left rounded-bottom">
+                <div id="new-record-tab" class="container tab-pane active">
+                    <div class="row py-4">
+                        <div th:replace="fragments/messages :: messagesFragment('Datos de la Noticia')"></div>
+                    </div>
+                    <form th:action="@{/console/addNews}" method="post">
+                        <fieldset class="form-field-set">
+                        <div class="row my-4">
+                                <div class="col-3 d-flex flex-wrap align-content-center justify-content-end">
+                                    <p>Titulo: </p>
+                                </div>
+                                <th:block >
+                                    <div class="col-9">
+                                        <input class="form-control input-sm"
+                                               type="text" name="title" id="title"
+                                               />
+                                    </div>
+                                </th:block>
+                                </div>
+                            <div class="row my-4">
+                                <div class="col-3 d-flex flex-wrap align-content-center justify-content-end">
+                                    <p>Texto: </p>
+                                </div>
+                                <th:block >
+                                    <div class="col-9">
+                                       <textarea class="form-control" name="detalle" id="detalle" rows="7"></textarea>
+                                    </div>
+                                </th:block>
+                                </div>
+                                </fieldset>
+                                <div class="row py-4 d-flex flex-wrap align-content-center justify-content-end">
+                            <div class="col-3">
+                            </div>
+                            <div class="col-9">
+                                <input class="btn btn-primary btn-sm"
+                                       name="submit"
+                                       type="submit"
+                                       th:value="Guardar"/>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-1 col-lg-1"></div>
+    </div>
+</main>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layouts/parent}">
+<body>
+<main layout:fragment="content">
+    <div class="row">
+        <div class="col-md-1 col-lg-1"></div>
+        <div class="col-sm-12 col-md-10 col-lg-10">
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#new-record-tab">Agregar Nuevo Registro</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-1 col-lg-1"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-1 col-lg-1"></div>
+        <div class="col-sm-12 col-md-10 col-lg-10">
+            <div class="tab-content appcovid-tab-content border-right border-bottom border-left rounded-bottom">
+                <div id="new-record-tab" class="container tab-pane active">
+                    <div class="row py-4">
+                        <div th:replace="fragments/messages :: messagesFragment('Nuevo Registro')"></div>
+                    </div>
+                    <form id="newRecordForm" th:if="${kdRecord != null}" action="javascript:saveRecord()" th:object="${kdRecord}" method="post">
+                        <fieldset class="form-field-set">
+                            <div class="row my-4">
+                                <div class="col-3 d-flex flex-wrap align-content-center justify-content-end">
+                                    <p>Kd: </p>
+                                </div>
+                                <th:block th:if="${key == null}">
+                                    <div class="col-9">
+                                        <input class="form-control input-sm"
+                                               type="text"
+                                               th:field="*{kd}"/>
+                                        <span th:if="${#fields.hasErrors('kd')}" th:errors="*{kd}">Error</span>
+                                    </div>
+                                </th:block>
+                                <th:block th:unless="${key == null}">
+                                    <div class="col-9">
+                                        <input class="form-control input-sm"
+                                               th:type="text"
+                                               th:attr="name='kd'"
+                                               th:value="${key}"
+                                               readonly/>
+                                        <!--th:field="*{kd}"-->
+                                    </div>
+                                </th:block>
+                            </div>
+                            <th:block th:if="${dateKey == null}">
+                                <div class="row my-4">
+                                    <div class="col-3 d-flex flex-wrap align-content-center justify-content-end">
+                                        <p>Key Date: </p>
+                                    </div>
+                                    <div class="col-9">
+                                        <input class="form-control input-sm"
+                                               type="text"
+                                               th:attr="name='dateKey'"
+                                               th:value="${dateKey}"/>
+                                        <span th:if="${#fields.hasErrors('dateKey')}" th:errors="*{dateKey}">Error</span>
+                                    </div>
+                                </div>
+                            </th:block>
+                            <th:block th:unless="${dateKey == null}">
+                                <input type="hidden" th:attr="name='dateKey'" th:value="${dateKey}"/>
+                            </th:block>
+                            <div class="row my-4">
+                                <div class="col-3 d-flex flex-wrap align-content-center justify-content-end">
+                                    <p>UUID: </p>
+                                </div>
+                                <th:block th:if="${uuid == null}">
+                                    <div class="col-9">
+                                        <input class="form-control input-sm"
+                                               type="text"
+                                               th:field="*{uuid}"/>
+                                        <span th:if="${#fields.hasErrors('uuid')}" th:errors="*{uuid}">Error</span>
+                                    </div>
+                                </th:block>
+                                <th:block th:unless="${uuid == null}">
+                                    <div class="col-9">
+                                        <input class="form-control input-sm"
+                                               th:type="text"
+                                               th:attr="name='uuid'"
+                                               th:value="${uuid}"
+                                               readonly/>
+                                    </div>
+                                </th:block>
+                            </div>
+                            <div class="row my-4">
+                                <div class="col-3 d-flex flex-wrap align-content-center justify-content-end">
+                                    <p>Id de prueba: </p>
+                                </div>
+                                <div class="col-9">
+                                    <input class="form-control input-sm"
+                                           type="text"
+                                           th:field="*{idTest}"/>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3 d-flex flex-wrap align-content-center justify-content-end">
+                                    <p>Nombre de usuario: </p>
+                                </div>
+                                <div class="col-9">
+                                    <input class="form-control input-sm"
+                                           type="text"
+                                           th:field="*{userName}"/>
+                                    <span th:if="${#fields.hasErrors('userName')}" th:errors="*{userName}">Error</span>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <div class="row py-4 d-flex flex-wrap align-content-center justify-content-end">
+                            <div class="col-3">
+                            </div>
+                            <div class="col-9">
+                                <input class="btn btn-primary btn-sm"
+                                       name="submit"
+                                       type="submit"
+                                       th:value="#{btn.save.record}"/>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-1 col-lg-1"></div>
+    </div>
+    <script th:inline="javascript">
+        var urlSaveRecord = /*[[@{/console/saverecord}]]*/ '/console/saverecord';
+        var recordForm = $('#newRecordForm');
+    </script>
+</main>
+</body>
+</html>
