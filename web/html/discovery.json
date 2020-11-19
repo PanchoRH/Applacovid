@@ -1,0 +1,9 @@
+{
+    "applications": [{
+        "appId": "Applacovid",
+        "description": "Applacovid. Cinvestav CDMX, México. Proyecto apoyado por CONACyT.",
+        "bucketBaseUrl": "https://pakal.cs.cinvestav.mx/",
+        "reportBaseUrl": "https://pakal.cs.cinvestav.mx/",
+        "contact": "applacovid@gmail.com"
+    }]
+}

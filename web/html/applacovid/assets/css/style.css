@@ -1,0 +1,68 @@
+/**
+ * Departamento de Computación, CINVESTAV CDMX.
+ *
+ * Sistema informático financiado con el proyecto CONACyT - 313572
+ *
+ * Derechos de autor (c) 2020
+ * Todos los derechos reservados.
+ */
+
+html, body {
+	height: 100%;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+
+.info { padding: 6px 8px; font: 14px/16px Arial, Helvetica, sans-serif; background: white; background: rgba(255,255,255,0.8); box-shadow: 0 0 15px rgba(0,0,0,0.2); border-radius: 5px; } 
+.info h4 { margin: 0 0 5px; color: #777; }
+.leyenda { text-align: left; line-height: 18px; color: #555; } 
+.leyenda i { width: 18px; height: 18px; float: left; margin-right: 8px; opacity: 0.7; }
+
+#map {
+	width: 100%;	// 800px;
+	height: 450px;	// 500px;
+}
+
+.tab-mapa {
+	width: 100%;
+	height: 60px;
+}
+
+.tab-mapa button {
+	float: left;
+	width: 33.33%;
+	height: 100%
+}
+
+#botonriesgo {
+        background-color: #9869a4;
+}
+
+#botonsemaforo {
+        background-color: #b27cbf;
+}
+
+#botoncasos {
+        background-color: #d7a2e4;
+}
+
+#botonriesgo, #botonsemaforo, #botoncasos {
+	color: white;
+        border: none;
+        outline: none;
+        font-size: 1.2em;
+        text-align: center;
+        cursor: pointer;
+        transition: 0.3s;
+}
+
+#botonriesgo:hover, #botonsemaforo:hover, #botoncasos:hover {
+        background-color: #4d486c;
+}
+
+#botonriesgo:active, #botonsemaforo:active, #botoncasos:active {
+        background-color: #ca8ddb;
+}
