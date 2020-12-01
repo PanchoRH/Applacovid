@@ -1,0 +1,128 @@
+
+var banner = "Aviso de privacidad";
+var titulo = "Términos y condiciones de uso";
+var html = `
+<h4>
+T&Eacute;RMINOS Y CONDICIONES.
+</h4>
+
+<p>
+La aplicaci&oacute;n Applacovid, en lo sucesivo la 'App' es una aplicaci&oacute;n m&oacute;vil, desarrollada por miembros del Grupo de Criptograf&iacute;a y Seguridad Inform&aacute;tica del Centro de Investigaci&oacute;n y de Estudios Avazados del Instituto Polit&eacute;cnico Nacional, en la Ciudad de M&eacute;xico.
+</p>
+
+<p>
+Cualquiera que desee recibir alertas en caso de que existan contagios cercanos, podr&aacute; hacerlo previa lectura y aceptaci&oacute;n de los t&eacute;rminos y condiciones de la App aqu&iacute; descritos; si no est&aacute; de acuerdo con los mismos, o no los comprende en su totalidad, le sugerimos no descargar la aplicaci&oacute;n. Cualquier duda puede presentarla en
+<a href='mailto:applacovid@gmail.com'>applacovid@gmail.com</a>.
+</p>
+
+<p>
+Si es menor de edad, debe requerir autorizaci&oacute;n de quien ejerce su patria potestad o tutor&iacute;a para la descarga de la App, o con quienes cuenten con la capacidad legal para ello.
+</p>
+
+<h4>
+REQUISITOS B&Aacute;SICOS DE USO.
+</h4>
+
+<p>
+Para utilizar la App, la persona usuaria necesita un dispositivo m&oacute;vil que cumpla con los requisitos de compatibilidad, con acceso a Bluetooth, e internet, ya sea mediante plataforma iOS 13 o superior, o bien plataforma Android 6 o superior.
+</p>
+
+<p>
+Estos factores pueden influir en la accesibilidad y rendimiento de la App, siendo cargo de la persona usuaria el cumplir con estos requisitos b&aacute;sicos para el uso efectivo.
+</p>
+
+<h4>
+ACTUALIZACIONES DE SOFTWARE.
+</h4>
+
+<p>
+La App podr&aacute; actualizarse para efectos de mejorar su funcionalidad, como correcci&oacute;n de errores, revisiones, funciones mejoradas, complementos faltantes y nuevas versiones, para lo cual podr&aacute; requerirse de la aceptaci&oacute;n de estas Actualizaciones por parte de la persona usuaria.
+</p>
+
+<h4>
+POL&Iacute;TICA DE PRIVACIDAD.
+</h4>
+
+<p>
+La presente pol&iacute;tica de privacidad norma el uso de la App, cuyo objetivo es facilitar la detecci&oacute;n de personas que hayan estado recientemente en contacto con quien haya dado positivo en la prueba, tanto de forma directa (familiares, amistades, conocidos) como indirecta (personas al azar en supermercados, farmacias, oficinas, elevadores, transporte p&uacute;blico, entre otros lugares p&uacute;blicos), notific&aacute;ndoles de manera sistem&aacute;tica y an&oacute;nima de esta situaci&oacute;n, as&iacute; como su nivel de riesgo de contacto, con el fin de ayudar a reducir la propagaci&oacute;n del virus.
+</p>
+
+<h4>
+INFORMACI&Oacute;N UTILIZADA POR LA APP
+</h4>
+
+<p>
+La app genera y transmite c&oacute;digos aleatorios y an&oacute;nimos para ser recibidos por otros dispositivos, as&iacute;mismo recopila y almacena localmente los c&oacute;digos recabados de otros dispositivos. Para esto no se requieren ni utilzan ni almacenan datos personales o informaci&oacute;n que pudiera dar a conocer la identidad de la personas usuarias de los dispositivos implicados.
+</p>
+
+<p>
+Es necesario activar los permisos de localizaci&oacute;n ya que para el acceso a Bluetooth el sistema operativo as&iacute; lo requiere, sin embargo la aplicaci&oacute;n no utiliza, ni recolecta ni transmite la información de georreferencia.
+</p>
+
+<p>
+Por restricciones del sistema operativo, para dispositivos iOS es necesario que la aplicaci&oacute;n se encuentre en primer plano para emitir la señal de Bluetooth.
+</p>
+
+<h4>
+INFORMACI&Oacute;N QUE NO REQUIERE NI UTILIZA LA APP
+</h4>
+
+<p>
+La App no requiere ni utiliza informaci&oacute;n sobre la ubicaci&oacute;n del dispositivo. Algunas versiones de Android requieren el permiso de ubicaci&oacute;n para habilitar la conectividad v&iacute;a Bluetooth. Sin embargo, los datos de localizaci&oacute;n y ubicaci&oacute;n no son enviados a nuestros servidores, por ende, nosotros no tendremos acceso a esa informaci&oacute;n.
+</p>
+
+<h4>
+INFORMACI&Oacute;N AUTOM&Aacute;TICAMENTE RECOLECTADA
+</h4>
+
+<p>
+Para efectos de diagnóstico, la App pudiera recolectar en autom&aacute;tico el sistema operativo de su dispositivo, el tipo de dispositivo que utiliza, el identificador del m&oacute;vil, su dirección IP, entre otros.
+</p>
+
+<h4>
+ACCESO RESTRINGIDO
+</h4>
+
+<p>
+&Uacute;nicamente se podr&aacute; permitir el acceso de la información recolectada (la cual no incluye datos personales) por diversas autoridades si es requerida por ley, en ejercicio de alguna de sus atribuciones legales o por v&iacute;a jurisdiccional, o bien con motivo de cualquier otra de las causales de excepci&oacute;n contempladas en los artículos 22, 66 y 70 de la Ley General de Protecci&oacute;n de Datos Personales en Posesi&oacute;n de Sujetos Obligados o bien 10 y 37 de la Ley General de Protecci&oacute;n de Datos Personales en Posesi&oacute;n de Particulares, seg&uacute;n sea el caso.
+</p>
+
+<p>
+<b>
+En ning&uacute;n caso se transmitir&aacute; informaci&oacute;n para efectos comerciales de naturaleza alguna.
+No recibir&aacute; publicidad u otras notificaciones que no sean las estrictamente necesarias para el correcto funcionamiento del servicio que se plantea proporcionar.
+</b>
+</p>
+
+<h4>
+SEGURIDAD
+</h4>
+
+<p>
+La App no recolecta informaci&oacute;n de datos personales. Adicionalmente, cuenta con diversos mecanismos de seguridad inform&aacute;tica y de gesti&oacute;n o procedimiento para proteger y salvaguardar la informaci&oacute;n confidencial. Si bien ning&uacute;n sistema de seguridad puede prever por completo todas las posibles brechas de seguridad potenciales, se trabaja continuamente para proteger la informaci&oacute;n utilizada mediante la adopci&oacute;n de medidas de seguridad razonables, generalmente reconocidas y aceptadas.
+</p>
+
+<p>
+El desarrollador no tendr&aacute; responsabilidad alguna que pudiera derivar por el uso indebido o no autorizado que realice la persona con la App. Asimismo, en caso de cambio de dispositivo, se recomienda la desinstalaci&oacute;n de la App.
+</p>
+
+<h4>
+MODIFICACIONES A LA POL&Iacute;TICA DE PRIVACIDAD
+</h4>
+
+<p>
+Cualquier cambio que se llegare a suscitar en la pol&iacute;tica de privacidad se notificar&aacute; a trav&eacute;s del correo de contacto, proporcionado voluntariamente por el usuario.
+Cualquier cambio realizado quedar&aacute; asentado en este apartado para consultas posteriores.
+Si el Usuario no est&aacute; de acuerdo con los T&eacute;rminos y Condiciones vigentes, podr&aacute; desinstalar la aplicaci&oacute;n en cualquier momento siguiendo el procedimiento est&aacute;ndar para tal efecto, conforme la plataforma y modelo utilizados.
+</p>
+
+<h4>
+CONTACTO
+</h4>
+
+<p>
+En caso de cualquier duda o si requieres asistencia, puedes contactarnos en:
+<a href='mailto:applacovid@gmail.com'>applacovid@gmail.com</a>
+</p>
+`
+

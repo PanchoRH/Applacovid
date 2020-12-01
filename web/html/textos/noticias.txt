@@ -1,0 +1,28 @@
+
+
+var banner_titulo = "Noticias";
+
+var banner_texto = `
+Consulta las noticias más recientes
+relacionadas con Applacovid y el COVID-19
+`;
+
+var noticias = [{
+	"titulo" : "Entrevista",
+	"html" : `
+<h3>
+Entrevista en Conexi&oacute;n Cinvestav
+</h3>
+
+<p>
+¡Estamos de estreno! y en esta nueva temporada de Investigación en Primera Persona, la doctora Brisbane Ovilla Martínez da a conocer el desarrollo de una aplicación para teléfonos móviles que ayuda a alertar al usuario de posible contagio por covid-19 al identificar a las personas con las que ha tenido contacto.
+<br>
+</p>
+<div>
+<a href="https://www.facebook.com/watch/?v=805346713562832" target="_blank">
+<button class="btn btn-default">VIDEO</button>
+</a>
+</div>
+`
+}]
+

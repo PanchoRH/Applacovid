@@ -1,0 +1,193 @@
+
+var banners = [{
+	"titulo" : "&iquest;Qu&eacute; es Applacovid?",
+	"color" : "#a5daa9",
+	"url" : "index.html#titulo0",
+	"texto" : `
+Ay&uacute;danos a rastrear los contagios
+<br>
+en el CINVESTAV Zacatenco
+`
+}, {
+	"titulo" : "Zonas de riesgo",
+	/*
+	"color" : "#9564a1",
+	"color" : "#a5daa9",
+	"color" : "#256f54",
+	*/
+	"color" : "#64a28b",
+	"url" : "https://pakal.cs.cinvestav.mx/applacovid/",
+	"texto" : `
+Consulta las zonas de riesgo
+<br>
+por estado o municipio
+`
+}, {
+	"titulo" : "En caso de contagio",
+	/*
+	"color" : "#64a28b",
+	*/
+	"color" : "#256f54",
+	"url" : "faqs.html",
+	"texto" : `
+Descubre las recomendaciones de salud
+<br>
+si presentas s&iacute;ntomas
+<br>
+Hazte la prueba de COVID-19 en el CINVESTAV
+`
+}];
+
+var titulo0 = "&iquest;Qu&eacute; es Applacovid?";
+var titulo1 = "&iquest;C&oacute;mo funciona?";
+var titulo2 = "Mapas";
+
+var boton1 = "Instalaci&oacute;n";
+var boton2 = "Uso";
+var boton3 = "Rep&oacute;rtate";
+
+
+var subtitulo1 = "Protegemos tu privacidad";
+var url1 = "img/pantalla-segura.png";
+var contenido1 = `
+Es un sistema de detecci&oacute;n de contactos
+con personas confirmadas con COVID-19,
+protegiendo tu privacidad
+`;
+
+var subtitulo2 = "Detecci&oacute;n de proximidad";
+var url2 = "img/bluetooth.png";
+var contenido2 = `
+Mediante se&ntilde;ales Bluetooth se detectan
+otros dispositivos cercanos de manera an&oacute;nima,
+monitoreando la proximidad y duraci&oacute;n del encuentro
+`;
+
+var subtitulo3 = "Notificaciones de riesgo";
+var url3 = "img/mensaje.png";
+var contenido3 = `
+Applacovid consulta los reportes m&aacute;s recientes
+de usuarios reportados como positivos y te avisa
+si estuviste en contacto cercano con alguno
+durante los d&iacute;as recientes
+No se revela tu identidad ni la de los casos confirmados
+`;
+
+var subtitulo_android = "Android";
+
+var instrucciones_android = `
+<ul id="lista-android"><li>
+<!--
+En <b>Ajustes</b> busca la opci&oacute;n
+<b>Acerca del dispositivo/Info. software</b>
+</li><li>
+Pulsa siete veces en <b>N&uacute;mero de compilaci&oacute;n</b>
+</li><li>
+Vuelve a <b>Ajustes</b> y selecciona <b>Opciones para desarrolladores</b>
+</li><li>
+Activa el interruptor de la parte superior
+</li><li>
+-->
+Pulsa en el bot&oacute;n <a href="apk/Applacovid.apk"><b>Descarga</b></a> y selecciona <b>Aceptar</b>
+</li><li>
+Permite la instalaci&oacute;n de apps de or&iacute;genes desconocidos por esta ocasi&oacute;n
+</li><li>
+Si el sistema te pregunta si confias en el desarrollador podr&aacute;s elegir si instalas o no la app. Para poder instalarla debes responder que confias en el desarrollador
+</li><li>
+Abre la app y autoriza los permisos para Bluetooth y los servicios de ubicaci&oacute;n
+</li></ul>
+<div class="d-flex justify-content-center">
+<a href="apk/Applacovid.apk" style="padding: 20px 0;">
+<button class="btn btn-default">Descarga</button>
+</a>
+</div>
+`;
+
+var subtitulo_ios = "iOS";
+
+var instrucciones_ios = `
+<ul id="lista-ios"><li>
+Conecta tu dispositivo a una computadora <i>Mac</i>
+</li><li>
+En el <b>Finder</b> accede a la ubicaci&oacute;n del
+dispositivo en el lateral izquierdo
+</li><li>
+Haz click sobre la informaci&oacute;n de bater&iacute;a
+y almacenamiento del dispositivo, en la parte superior
+</li><li>
+Aparecer&aacute; el n&uacute;mero de serie y el <b>UDID</b>,
+anota o copia &eacute;ste &uacute;ltimo
+</li></ul>
+<p>
+Si tu computadora tiene <i>Windows</i>, necesitar&aacute;s la
+aplicaci&oacute;n <b>iTunes</b>
+</p>
+<ul id="lista-ios"><li>
+Conecta tu dispositivo y ejecuta <b>iTunes</b>
+</li><li>
+Pulsa en la parte superior izquierda de la miniatura del terminal
+</li><li>
+En el primer recuadro de informaci&oacute;n haz click sobre
+el n&uacute;mero de serie del dispositivo
+</li><li>
+Aparecer&aacute; el <b>UDID</b>, an&oacute;talo o c&oacute;pialo
+</li></ul>
+<p>
+Llena el siguiente formulario y te enviaremos instrucciones por correo electr&oacute;nico
+</p>
+<div class="d-flex justify-content-center" style="padding: 20px 0;">
+<a href="https://pakal.cs.cinvestav.mx/admin/ios/form" target="_blank">
+<button class="btn btn-default">Formulario</button>
+</a>
+</div>
+`;
+var subtitulo_uso = "Requerimientos de uso";
+
+var instrucciones_uso = `
+<p>Para poder ejecutar la app:</p>
+<ul style="text-align: justify; text-justify: inter-word;"><li>
+Activa el Bluetooth
+</li><li>
+Si tu dispositivo lo requiere, activa los servicios de ubicaci&oacute;n
+</li><li>
+Permite que se desactive el modo de ahorro de energ&iacute;a
+</li><li>
+Mant&eacute;n cargada la bater&iacute;a de tu dispositivo y ll&eacute;valo contigo durante tu estancia dentro del CINVESTAV
+</li></ul>
+<p>
+No recolectamos ni divulgamos tu ubicaci&oacute;n o ning&uacute;n otro dato personal,
+consulta la <a href="privacidad.html">Pol&iacute;tica de privacidad</a>
+</p>
+`;
+
+var subtitulo_reporte = "No olvides reportarte";
+
+var instrucciones_reporte = `
+<p>
+En caso de sufrir un contagio o presentar s&iacute;ntomas,
+es muy importante que te hagas la prueba y en caso positivo
+se te reporte en nuestro sistema
+</p>
+<ul style="text-align: justify; text-justify: inter-word;"><li>
+Previo a la prueba Covid en el CINVESTAV,
+se te pedir&aacute; que generes en ese
+momento el c&oacute;digo QR con tu app
+</li><li>
+Muestra el c&oacute;digo QR al personal encargado
+para que lo escane&eacute; y te registre en nuestro sistema
+</li><li>
+Se te realizar&aacute; el procedimiento m&eacute;dico
+y posteriormente se te notificar&aacute; el resultado
+por los medios convencionales
+</li><li>
+En caso de obtener un resultado positivo,
+quedar&aacute; registrado en nuestro sistema
+de manera totalmente an&oacute;nima
+</li></ul>
+<p>
+Si fuiste diagnosticado por una instancia ajena al CINVESTAV,
+consulta la secci&oacute;n <a href="faqs.html">FAQs</a> 
+</p>
+`
+
+

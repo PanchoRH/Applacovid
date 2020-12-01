@@ -1,0 +1,105 @@
+
+
+var banner_titulo = "FAQs";
+
+var banner_texto = `
+Resolvemos tus dudas y preguntas frecuentes
+acerca del uso de la aplicaci&oacute;n, las
+precauciones sanitarias y qu&eacute; hacer si
+el resultado de tu prueba es positivo
+`;
+
+var faqs = [{
+	"titulo" : "&iquest;D&oacute;nde me hago la prueba?",
+	"html" : `
+<h3>
+Puedes hacerla en el CINVESTAV
+</h3>
+
+<p>
+Acude al Departamento de _______ (donde?)
+con la Dra. Bety
+</p>
+`
+}, {
+	"titulo" : "Me hice la prueba en otro lugar",
+	"html" : `
+<h3>
+</h3>
+
+<p>
+Si te hiciste la prueba en un laboratorio ajeno al CINVESTAV,
+podr&aacute;s acudir a recursos humanos, ya sea personalmente
+o de manera remota enviando el comprobante emitido por la entidad
+que certifica el resultado positivo.
+<br>
+Deber&aacute;s anexar el c&oacute;digo QR generado con tu app
+el mismo d&iacute;a que recibiste el resultado positivo
+</p>
+`
+}, {
+	"titulo" : "Me diagnosticaron sin prueba de laboratorio",
+	"html" : `
+<h3>
+</h3>
+
+<p>
+Si se te diagnostic&oacute; mediante alg&uacute;n instrumento
+implementado por el gobierno federal o estatal, como un call center
+o acudiste a un hospital pero no te realizaron la prueba,
+posiblemente no se te haya dado un comprobante.
+<br>
+Quiz&aacute; prefieras hacerte la prueba en el CINVESTAV
+</p>
+`
+}, {
+	"titulo" : "&iquest;Porqu&eacute; tengo que activar el bluetooth?",
+	"html" : `
+<h3>
+Es necesario para el rastreo
+</h3>
+
+<p>
+Mediante las se&ntilde;ales Bluetooth se detecta la proximidad con otros dispositivos
+y se mide el tiempo en el que estuvieron muy cerca.
+Recuerda que cuanto m&aacute;s cerca est&eacute;s de otra persona y durante m&aacute;s tiempo, mayor es la probabilidad de contagio.
+</p>
+`
+}, {
+	"titulo" : "&iquest;Porqu&eacute; tengo que activar la ubicaci&oacute;n?",
+	"html" : `
+<h3>
+No en todos los casos es necesario
+</h3>
+
+<p>
+Algunos dispositivos no permiten utilizar el Bluetooth si no se han activado los servicios de ubicaci&oacute;n.
+Aunque la app no requiere  ni utiliza la ubicaci&oacute;n, tendr&aacute;s que activarla para que la app pueda funcionar
+</p>
+`
+}, {
+	"titulo" : "&iquest;Para qu&eacute; quieren saber mi ubicaci&oacute;n?",
+	"html" : `
+<h3>
+La app no consulta ni guarda la ubicaci&oacute;n
+</h3>
+
+<p>
+Algunos dispositivos no permiten utilizar el Bluetooth si no se han activado los servicios de ubicaci&oacute;n, por lo que es necesario activarla
+</p>
+`
+}, {
+	"titulo" : "No quiero que se sepa que me enferm&eacute;",
+	"html" : `
+<h3>
+No se revela tu identidad en ning&uacute;n momento
+</h3>
+
+<p>
+Tanto en el proceso de rastreo como en la gesti&oacute;n de reportes de contagio,
+se utilizan m&eacute;todos de seguridad inform&aacute;tica para mantener la
+privacidad y el anonimato de todos los usuarios
+</p>
+`
+}]
+

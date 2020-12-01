@@ -1,0 +1,32 @@
+<?xml version="1.0" enconding="UTF-8">
+<rss version="2.0">
+
+<channel>
+	<title>Applacovid</title>
+	<link>http://pakal.cs.cinvestav.mx</link>
+	<description>
+	El grupo de Criptograf&iacute;a y Seguridad Inform&aacute;tica
+	del CINVESTAV Zacatenco presenta su app de rastreo de contactos
+	CONVID-19.
+	</description>
+</channel>
+
+<item>
+	<title>Preguntas frecuentes</title>
+	<link>http://pakal.cs.cinvestav.mx/faqs.html</link>
+	<description>
+	&iquest;Tienes dudas? Consulta las preguntas frecuentes.
+	</description>
+	<pubDate>27 Nov 2020<pubDate>
+</item>
+
+<item>
+	<title>Noticias</title>
+	<link>http://pakal.cs.cinvestav.mx/noticias.html</link>
+	<description>
+	Consulta las &uacute;ltimas noticias.
+	</description>
+	<pubDate>27 Nov 2020<pubDate>
+</item>
+
+</rss>
