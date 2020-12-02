@@ -34,6 +34,7 @@ for (var i = 0; i < k; i++) {
 <h1>`+banners[i].titulo+`</h1>
 <br>
 <p class="vanish-mini">`+banners[i].texto+`</p>
+`+banners[i].extra+`
 		</div>
 		</a>
 	</div>

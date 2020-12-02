@@ -2,7 +2,8 @@
 var banners = [{
 	"titulo" : "&iquest;Qu&eacute; es Applacovid?",
 	"color" : "#a5daa9",
-	"url" : "index.html#titulo0",
+	"url" : "#",
+	"extra" : "<br><button type='button' class='btn btn-default' data-toggle='modal' data-target='#myModal'>Ver video</button>",
 	"texto" : `
 Ay&uacute;danos a rastrear los contagios
 <br>
@@ -17,6 +18,7 @@ en el CINVESTAV Zacatenco
 	*/
 	"color" : "#64a28b",
 	"url" : "https://pakal.cs.cinvestav.mx/applacovid/",
+	"extra" : "",
 	"texto" : `
 Consulta las zonas de riesgo
 <br>
@@ -29,6 +31,7 @@ por estado o municipio
 	*/
 	"color" : "#256f54",
 	"url" : "faqs.html",
+	"extra" : "",
 	"texto" : `
 Descubre las recomendaciones de salud
 <br>
@@ -91,8 +94,6 @@ Activa el interruptor de la parte superior
 Pulsa en el bot&oacute;n <a href="apk/Applacovid.apk"><b>Descarga</b></a> y selecciona <b>Aceptar</b>
 </li><li>
 Permite la instalaci&oacute;n de apps de or&iacute;genes desconocidos por esta ocasi&oacute;n
-</li><li>
-Si el sistema te pregunta si confias en el desarrollador podr&aacute;s elegir si instalas o no la app. Para poder instalarla debes responder que confias en el desarrollador
 </li><li>
 Abre la app y autoriza los permisos para Bluetooth y los servicios de ubicaci&oacute;n
 </li></ul>
